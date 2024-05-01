@@ -1,0 +1,17 @@
+﻿.modalBackground
+{
+      background-color: Yellow;
+      filter: alpha(opacity=60);
+      opacity: 0.6;
+}
+ 
+.modalPopup
+{
+      background-color:#ffffdd;
+      border-width:3px;
+      border-style:solid;
+      border-color:Gray;
+      padding:5px;
+      width: 350px;
+      height:300px;
+}

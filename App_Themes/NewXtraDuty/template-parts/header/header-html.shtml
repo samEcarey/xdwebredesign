@@ -1,0 +1,16 @@
+<!-- /* ----------------------------------------------------------
+ * Header: Html-Header
+ *-------------------------------------------------------------*/ -->
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- //-- favicon.ico in root --// -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+<!-- //-- CSS --// -->
+<link rel="stylesheet" href="App_Themes/NewXtraDuty/style.css">
+
+<!-- //-- Modernizr --// -->
+<script src="App_Themes/NewXtraDuty/js/modernizr-2.8.3.min.js"></script>

@@ -1,0 +1,347 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="" xmlns:xlink="http://www.w3.org/1999/xlink" style=""><head id="Head1"><title>Xtra Duty - Assigned Jobs</title><!-- ===========================================================
+    ===== Header: Html-Header
+    =============================================================== -->
+   <meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"><meta name="description"><meta name="author">
+   
+   <!--===== favicon.ico in root =====-->
+   <link rel="icon" href="App_Themes/NewXtraDuty/favicon-32x32.png">
+   <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png" /> -->
+   <!-- <link rel="icon" href="App_Themes/ExtraDuty/img/favicon-32x32.png" type="image/png" /> -->
+   <!-- <link rel="shortcut icon" href="App_Themes/ExtraDuty/img/favicon-32x32.png" type="image/png" /> -->
+   
+   <!--===== CSS =====-->
+   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald" rel="stylesheet"><link rel="stylesheet" href="App_Themes/NewXtraDuty/bootstrap.min.css"><link rel="stylesheet" href="App_Themes/NewXtraDuty/font-awesome.min.css"><link rel="stylesheet" href="App_Themes/NewXtraDuty/toastr.css" type="text/css"><link rel="stylesheet" href="App_Themes/NewXtraDuty/datepicker.css" type="text/css"><link rel="stylesheet" href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.css" type="text/css">
+   
+   
+   <!--===== Modernizr =====-->
+   <script src="App_Themes/NewXtraDuty/js/modernizr-2.8.3.min.js"></script>
+   <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+   
+   <script src="App_Themes/NewXtraDuty/js/min/bootstrap.min.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/jquery/jquery.2.2.0.min.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/moment.min.v2.js"></script>
+   <script type="text/javascript" src="App_Themes/NewXtraDuty/js/tempusdominus-bootstrap-4.min.js"></script>
+   <!--[if lte IE 9]><script src="App_Themes/NewXtraDuty/js/jquery/jquery.1.8.3.min.js"></script><![endif]-->
+   <script src="App_Themes/NewXtraDuty/js/jquery/jquery.ui.1.10.4.min.js"></script>
+   
+   <!-- Notifications -->
+   <script src="App_Themes/NewXtraDuty/js/toastr.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/jsShowMessage.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/linearicons.free.1.0.0.svgembedder.min.js"></script>
+   
+   
+   <script type="text/javascript">
+       var buttonbusy = false;
+       function spinSubmit(mybutton, command, argument) {
+           if (!buttonbusy) {
+               var userAgentVar = navigator.userAgent;
+               mywidth = mybutton.getBoundingClientRect().width;
+               if (userAgentVar.indexOf("Firefox") > -1)
+                   mybutton.innerHTML = '<div class="spinner" style="width: ' + (mywidth - 22) + 'px;font-size:x-small;">Busy</div>';
+               else
+                   mybutton.innerHTML = '<div class="spinner" style="width: ' + (mywidth - 22) + 'px"><img src="App_Themes/NewXtraDuty/img/spinner.gif"></div>';
+               __doPostBack(command, argument);
+           }
+       }
+       function quietSubmit(mybutton, command, argument) {
+               __doPostBack(command, argument);
+       }
+   </script>
+   <link href="App_Themes/NewXtraDuty/ASPModal.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/bootstrap.min.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/bootstrap-timepicker.min.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/datepicker.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/font-awesome.min.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/ionicons.min.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/style.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.min.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/tether.min.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/toastr.css" type="text/css" rel="stylesheet"><link href="App_Themes/NewXtraDuty/toastr.min.css" type="text/css" rel="stylesheet"></head>
+   <body>
+           <form method="post" action="./wfAssignedJobs.aspx" id="form1" class="form-horizontal">
+   <div class="aspNetHidden">
+   
+   
+   
+   </div>
+   
+   <script type="text/javascript">
+   //<![CDATA[
+   var theForm = document.forms['form1'];
+   if (!theForm) {
+       theForm = document.form1;
+   }
+   function __doPostBack(eventTarget, eventArgument) {
+       if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+           theForm.__EVENTTARGET.value = eventTarget;
+           theForm.__EVENTARGUMENT.value = eventArgument;
+           theForm.submit();
+       }
+   }
+   //]]>
+   </script>
+   
+   
+   <script src="/WebResource.axd?d=IKHVjsufiGtHylPEZSthozdMqdHdgHfzK9O9YmC0iuhmzX2pGq-88GkaSDWoVDyhmQEI8ZtLFnM00kxT0B9qLPPmOSadWj2qmDSrE3Qiww81&amp;t=638369024483918269" type="text/javascript"></script>
+   
+   
+   <script src="/ScriptResource.axd?d=v1bTUxjjmI_d7V_wrOVwUc0YqawQ-G35zyI49o2tNtqCQjXjO66a6Wud41ndFZfNurhL_V9XWb5-pyDJ1TY5mnV5lKjB9mzbhGOg3jlhQwUmFQRi0bxfK_d1S-h4OuUC9lbLsarcIP7ZWE0YzRHavheIH13VR970Gpvci1V6ZjFOO6_Y1iaqN4p5mCb0CjMy0&amp;t=fffffffff055ad03" type="text/javascript"></script>
+   <script type="text/javascript">
+   //<![CDATA[
+   if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+   //]]>
+   </script>
+   
+   <script src="/ScriptResource.axd?d=J8BU7e3HIAMud2DcWP8ofcQS0jguNDSq3lEHdmgh13I6YkSFlDb8SMPkQEBDKzvy-nf8bx5-LpPG8_D9A1K3mPjpkXhArEPsyR6S2Rs7UQtvxypNoFoVGuLRpK4xdBGbdvyBQjRowBeblbQZhV-5WTjO30ZM_hxs0YpTm5KldwRJdkCUw8mY1QtlKlLtA-0b0&amp;t=fffffffff055ad03" type="text/javascript"></script>
+   <div class="aspNetHidden">
+   
+       
+       
+   </div>
+               <script type="text/javascript">
+   //<![CDATA[
+   Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdatePanel1','UpdatePanel1'], ['HiddenLinkButton','HiddenLinkButton'], [], 90, '');
+   //]]>
+   </script>
+   
+               <nav id="navbartop" class="navbar-fixed-top">
+   <section id="navbartop-left">
+       <div id="navbartop-navlogo">
+           <button id="lg-screen-toggle" class="btn-navbar-top collapse in" data-toggle="collapse">
+               <!-- <i id="sm-caret-left" class="fa fa-caret-left" aria-hidden="true"></i> -->
+               <i class="fa fa-bars" aria-hidden="true"></i>
+               <!-- <i id="sm-caret-right" class="fa fa-caret-right" aria-hidden="true"></i>-->        
+           </button>
+           <div id="navbartop-branding">
+               <img src="App_Themes/NewXtraDuty/img/logos/extraduty_icon30x15_wht.png" width="30" height="15">
+               <a class="" href="#0">
+                   <span>
+                       Auth Test
+                   </span>
+               </a>
+           </div>
+           </div>
+       <div id="navbartop-nav">
+           <ul>
+               <li><a href="./wfOfficerLanding.aspx">Dashboard</a></li>
+               <li><a href="./wfPreferences.aspx">Profile</a></li>
+           </ul>
+       </div>
+   </section>
+   <section id="navbartop-right">
+       <button class="btn-navbar-top btn-user">
+           <i class="fa fa-user" aria-hidden="true"></i>
+           <span>
+               Payton Joyce (NORTHWEST REGION) 
+               <em>is signed in</em>
+           </span>
+       </button>
+       <button id="sm-screen-toggle" class="btn-navbar-top btn-toggle collapsed" data-toggle="collapse">
+           <i class="fa fa-bars" aria-hidden="true"></i>
+       </button>
+   <!--    <button class="btn-navbar-top btn-settings">
+           <i class="fa fa-cogs" aria-hidden="true"></i>
+       </button>-->
+   </section>
+   
+   </nav>
+               <div id="page-wrapper">
+                   <aside id="sidebar-wrapper">
+   <header id="sidebar-branding" class="sidebar-section">
+       <a href="#0">
+        <img id="imgBranding" class="img-fluid center-block logo" src="App_Themes/NewXtraDuty/img/logos/extraduty_logo258x68_wht.png">
+       </a>
+   </header>
+   <section id="sidebar-profile" class="sidebar-section sidebar-profile-section">
+   <div class="profile-details">
+       <img class="img-fluid img-circle" src="http://placehold.it/50x50">
+       <div>
+           <span>Welcome, Payton</span>       
+           <ul>
+   <!--            <li><a href="#0"><i class="fa fa-envelope"></i></a></li>-->
+               <li><a href="wfPreferences.aspx"><i class="fa fa-user"></i></a></li>
+   <!--            <li><a href="#0"><i class="fa fa-cog"></i></a></li>-->
+               <li><a href="wfSignOut.aspx"><i class="fa fa-power-off"></i></a></li>
+           </ul>
+       </div>
+   </div>
+   
+   </section>
+   
+   <section id="sidebar-nav" class="sidebar-section">
+     
+   <ul>
+           <li><a href="wfOfficerLanding.aspx"><i class="fa fa-dashboard"></i><span> Dashboard</span></a></li>
+   <li><a href="wfMyHistory.aspx"><i class="fa fa-history"></i><span> Job History</span></a></li>
+   <li><a href="wfAvailableJobs.aspx"><i class="fa fa-list"></i><span> Available Jobs</span></a></li>
+   <li><a href="wfMyCalendar.aspx"><i class="fa fa-calendar"></i><span> My Schedule</span></a></li>
+   <li><a href="wfAssignedJobs.aspx"><i class="fa fa-wrench"></i><span> Assigned Jobs</span></a></li>
+   <li class="collapsed" data-toggle="collapse" data-target="#myaccountmenu"><a href="#0"><i class="fa fa-user"></i><span> My Account</span><i class="fa fa-angle-right"></i></a></li><ul class="sub-menu collapse" id="myaccountmenu">
+   <li><a href="wfPreferences.aspx">Edit Profile</a></li>
+   <li><a href="wfPassword.aspx">Change Password</a></li>
+   </ul>
+   <li><a href="wfSignOut.aspx"><i class="fa fa-power-off"></i><span> Sign Out</span></a></li>
+   </ul>
+   </section>
+   
+   <footer id="sidebar-footer" class="sidebar-section">
+   </footer>
+   </aside>
+   
+                   <section id="content-wrapper">
+                       <header class="container-fluid">
+       <div class="row col-xs-12 user-alert">
+   
+         </div>    <div class="row">
+           <div class="col-xs-12 card-admin card-pagetitle">
+           <div class="row col-xs-12">
+               <h1 class="col-xs-12 col-md-7 col-lg-9">Assigned Jobs</h1>
+               <img class="col-xs-12 col-md-4 col-lg-2" style="margin-top: -15px;margin-bottom:10px;width:auto;height:100%;" src="/App_Themes/NewXtraDuty/img/KnoxvilleLogoXDan.jpeg">
+           </div>            <ul class="breadcrumb">
+                   <li class="completed"><a href="wfOfficerLanding.aspx">Home</a></li>
+                   <li class="active"><a href="wfAssignedJobs.aspx">Assigned Jobs</a></li>
+                </ul>
+            </div>
+       </div>
+   </header>
+   
+                       <main class="container-fluid">
+                            <div class="row">
+                               <div class="col-xs-12 col-lg-6">
+                                   <div class="card-admin card-bsdatepicker">
+                                       <div id="reportrange" class="reportrange">
+                                           <i class="fa fa-calendar" aria-hidden="true"></i>
+                                           <span class="daterange-display">May. 1, 2024 - May. 1, 2024</span>
+                                           <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-12">
+                                   <div id="UpdatePanel1">
+                                               <div class="row">
+           <div class="col-xs-12">
+               <div class="card-admin">
+       <div class="result-item">
+           <div class="row result-details">
+               <section class="col-xs-5 col-sm-5 col-lg-3 col-xl-2 result-date">
+                   <div class="result-date-box">
+                       <div class="rs-month">May</div>
+                       <div class="rs-day">1</div>
+                       <div class="rs-year">2024</div>
+                   </div>
+               </section>
+               <section class="col-xs-7 col-sm-7 col-lg-3 col-xl-2 result-time">
+                   <div><span>Wednesday</span></div>
+                   <div><span>Starts: </span>0800</div>
+                   <div><span>Ends: </span>1600</div>
+               </section>
+               <section class="col-xs-12 col-sm-6 col-lg-7  col-xl-4 result-info">
+                   <div><span>Employer: </span>Construction Co</div>
+                   <div><span>Job Name: </span>Paving</div>
+                   <div><span>Location: </span>Main St.</div>
+               </section>
+               <section class="col-xs-12 col-sm-12 col-lg-12 col-xl-4 result-action">
+                   <div><span>Officer: </span>Armstrong, Brayden</div>
+                   <section>
+                       <button class="btn btn-primary btn-sm btn-right" type="button" runat="server" onclick="spinSubmit(this,'btnShowDetails','4682')">View Details</button>
+                   </section>
+               </section>
+           </div>
+       </div>
+   </div>	<div class="row">
+           <div class="col-xs-12">
+               <div class="card-admin">
+       <div class="result-item">
+           <div class="row result-details">
+               <section class="col-xs-5 col-sm-5 col-lg-3 col-xl-2 result-date">
+                   <div class="result-date-box">
+                       <div class="rs-month">May</div>
+                       <div class="rs-day">1</div>
+                       <div class="rs-year">2024</div>
+                   </div>
+               </section>
+               <section class="col-xs-7 col-sm-7 col-lg-3 col-xl-2 result-time">
+                   <div><span>Wednesday</span></div>
+                   <div><span>Starts: </span>0800</div>
+                   <div><span>Ends: </span>1600</div>
+               </section>
+               <section class="col-xs-12 col-sm-6 col-lg-7  col-xl-4 result-info">
+                   <div><span>Employer: </span>Construction Co</div>
+                   <div><span>Job Name: </span>Paving</div>
+                   <div><span>Location: </span>Main St.</div>
+               </section>
+               <section class="col-xs-12 col-sm-12 col-lg-12 col-xl-4 result-action">
+                   <div><span>Officer: </span>Ryan, Daniel</div>
+                   <section>
+                       <button class="btn btn-primary btn-sm btn-right" type="button" runat="server" onclick="spinSubmit(this,'btnShowDetails','4708')">View Details</button>
+                   </section>
+               </section>
+           </div>
+       </div>
+   </div>
+                                           <input type="hidden" name="hfStartDate" id="hfStartDate" value="05/01/2024">
+                                           <input type="hidden" name="hfEndDate" id="hfEndDate" value="05/01/2024">
+                                       </div></div></div></div></div></div></div></main>
+                       <footer class="container-fluid">
+       <div class="row card-admin">
+           <div class="col-xs-12">
+               <div class="card-block">
+                   <div class="footertitle">
+                       <center>
+                           <p>This software is protected under U.S. Copyright law and International Treaties. All Rights reserved.</p><p>
+                       </p></center>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </footer>
+   
+                   </section>
+               </div>
+           <span style="display: none !important;"><input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""></span><span style="display: none !important;"><input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg0MDc2MjYzNw9kFgICAQ9kFgwCBA8WAh4EVGV4dAUJQXV0aCBUZXN0ZAIGDxYCHwAFH1BheXRvbiBKb3ljZSAoTk9SVEhXRVNUIFJFR0lPTilkAgwPFgIfAAUGUGF5dG9uZAIODxYCHwAFpwc8bGk+PGEgaHJlZj0id2ZPZmZpY2VyTGFuZGluZy5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtZGFzaGJvYXJkIj48L2k+PHNwYW4+IERhc2hib2FyZDwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3Zk15SGlzdG9yeS5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtaGlzdG9yeSI+PC9pPjxzcGFuPiBKb2IgSGlzdG9yeTwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3ZkF2YWlsYWJsZUpvYnMuYXNweCI+PGkgY2xhc3M9ImZhIGZhLWxpc3QiPjwvaT48c3Bhbj4gQXZhaWxhYmxlIEpvYnM8L3NwYW4+PC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0id2ZNeUNhbGVuZGFyLmFzcHgiPjxpIGNsYXNzPSJmYSBmYS1jYWxlbmRhciI+PC9pPjxzcGFuPiBNeSBTY2hlZHVsZTwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3ZkFzc2lnbmVkSm9icy5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtd3JlbmNoIj48L2k+PHNwYW4+IEFzc2lnbmVkIEpvYnM8L3NwYW4+PC9hPjwvbGk+DQo8bGkgY2xhc3M9ImNvbGxhcHNlZCIgZGF0YS10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLXRhcmdldD0iI215YWNjb3VudG1lbnUiPjxhIGhyZWY9IiMwIj48aSBjbGFzcz0iZmEgZmEtdXNlciI+PC9pPjxzcGFuPiBNeSBBY2NvdW50PC9zcGFuPjxpIGNsYXNzPSJmYSBmYS1hbmdsZS1yaWdodCI+PC9pPjwvYT48L2xpPjx1bCBjbGFzcz0ic3ViLW1lbnUgY29sbGFwc2UiIGlkPSJteWFjY291bnRtZW51Ij4NCjxsaT48YSBocmVmPSJ3ZlByZWZlcmVuY2VzLmFzcHgiPkVkaXQgUHJvZmlsZTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9IndmUGFzc3dvcmQuYXNweCI+Q2hhbmdlIFBhc3N3b3JkPC9hPjwvbGk+DQo8L3VsPg0KPGxpPjxhIGhyZWY9IndmU2lnbk91dC5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtcG93ZXItb2ZmIj48L2k+PHNwYW4+IFNpZ24gT3V0PC9zcGFuPjwvYT48L2xpPmQCEQ8WAh8ABe0FPGhlYWRlciBjbGFzcz0iY29udGFpbmVyLWZsdWlkIj4NCiAgICA8ZGl2IGNsYXNzPSJyb3cgY29sLXhzLTEyIHVzZXItYWxlcnQiPg0KDQogICAgICA8L2Rpdj4gICAgPGRpdiBjbGFzcz0icm93Ij4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29sLXhzLTEyIGNhcmQtYWRtaW4gY2FyZC1wYWdldGl0bGUiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJyb3cgY29sLXhzLTEyIj4NCiAgICAgICAgICAgIDxIMSBjbGFzcz0iY29sLXhzLTEyIGNvbC1tZC03IGNvbC1sZy05Ij5Bc3NpZ25lZCBKb2JzPC9IMT4NCiAgICAgICAgICAgIDxpbWcgY2xhc3M9ImNvbC14cy0xMiBjb2wtbWQtNCBjb2wtbGctMiIgc3R5bGU9Im1hcmdpbi10b3A6IC0xNXB4O21hcmdpbi1ib3R0b206MTBweDt3aWR0aDphdXRvO2hlaWdodDoxMDAlOyIgc3JjPSIvQXBwX1RoZW1lcy9OZXdYdHJhRHV0eS9pbWcvS25veHZpbGxlTG9nb1hEYW4uanBlZyI+DQogICAgICAgIDwvZGl2PiAgICAgICAgICAgIDx1bCBjbGFzcz0iYnJlYWRjcnVtYiI+DQogICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJjb21wbGV0ZWQiPjxhIGhyZWY9IndmT2ZmaWNlckxhbmRpbmcuYXNweCI+SG9tZTwvYT48L2xpPg0KICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0iYWN0aXZlIj48YSBocmVmPSJ3ZkFzc2lnbmVkSm9icy5hc3B4Ij5Bc3NpZ25lZCBKb2JzPC9hPjwvbGk+DQogICAgICAgICAgICAgPC91bD4NCiAgICAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KPC9oZWFkZXI+DQpkAhMPZBYCZg9kFgICAQ8WAh8ABaoXCTxkaXYgY2xhc3M9InJvdyI+DQoJCTxkaXYgY2xhc3M9ImNvbC14cy0xMiI+DQoJCQk8ZGl2IGNsYXNzPSJjYXJkLWFkbWluIj4NCiAgICA8ZGl2IGNsYXNzPSJyZXN1bHQtaXRlbSI+DQogICAgICAgIDxkaXYgY2xhc3M9InJvdyByZXN1bHQtZGV0YWlscyI+DQogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iY29sLXhzLTUgY29sLXNtLTUgY29sLWxnLTMgY29sLXhsLTIgcmVzdWx0LWRhdGUiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJlc3VsdC1kYXRlLWJveCI+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJzLW1vbnRoIj5NYXk8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icnMtZGF5Ij4xPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJzLXllYXIiPjIwMjQ8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvc2VjdGlvbj4NCiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJjb2wteHMtNyBjb2wtc20tNyBjb2wtbGctMyBjb2wteGwtMiByZXN1bHQtdGltZSI+DQogICAgICAgICAgICAgICAgPGRpdj48c3Bhbj5XZWRuZXNkYXk8L3NwYW4+PC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdj48c3Bhbj5TdGFydHM6IDwvc3Bhbj4wODAwPC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdj48c3Bhbj5FbmRzOiA8L3NwYW4+MTYwMDwvZGl2Pg0KICAgICAgICAgICAgPC9zZWN0aW9uPg0KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImNvbC14cy0xMiBjb2wtc20tNiBjb2wtbGctNyAgY29sLXhsLTQgcmVzdWx0LWluZm8iPg0KICAgICAgICAgICAgICAgIDxkaXY+PHNwYW4+RW1wbG95ZXI6IDwvc3Bhbj5Db25zdHJ1Y3Rpb24gQ288L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2PjxzcGFuPkpvYiBOYW1lOiA8L3NwYW4+UGF2aW5nPC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdj48c3Bhbj5Mb2NhdGlvbjogPC9zcGFuPk1haW4gU3QuPC9kaXY+DQogICAgICAgICAgICA8L3NlY3Rpb24+DQogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iY29sLXhzLTEyIGNvbC1zbS0xMiBjb2wtbGctMTIgY29sLXhsLTQgcmVzdWx0LWFjdGlvbiI+DQogICAgICAgICAgICAgICAgPGRpdj48c3Bhbj5PZmZpY2VyOiA8L3NwYW4+QXJtc3Ryb25nLCBCcmF5ZGVuPC9kaXY+DQogICAgICAgICAgICAgICAgPHNlY3Rpb24+DQogICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9ImJ0biBidG4tcHJpbWFyeSBidG4tc20gYnRuLXJpZ2h0Ig0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU9ImJ1dHRvbiIgcnVuYXQ9InNlcnZlciIgb25jbGljaz0ic3BpblN1Ym1pdCh0aGlzLCdidG5TaG93RGV0YWlscycsJzQ2ODInKSIgPlZpZXcgRGV0YWlsczwvYnV0dG9uPg0KICAgICAgICAgICAgICAgIDwvc2VjdGlvbj4NCiAgICAgICAgICAgIDwvc2VjdGlvbj4NCiAgICAgICAgPC9kaXY+DQogICAgPC9kaXY+DQo8L2Rpdj4JPGRpdiBjbGFzcz0icm93Ij4NCgkJPGRpdiBjbGFzcz0iY29sLXhzLTEyIj4NCgkJCTxkaXYgY2xhc3M9ImNhcmQtYWRtaW4iPg0KICAgIDxkaXYgY2xhc3M9InJlc3VsdC1pdGVtIj4NCiAgICAgICAgPGRpdiBjbGFzcz0icm93IHJlc3VsdC1kZXRhaWxzIj4NCiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJjb2wteHMtNSBjb2wtc20tNSBjb2wtbGctMyBjb2wteGwtMiByZXN1bHQtZGF0ZSI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icmVzdWx0LWRhdGUtYm94Ij4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icnMtbW9udGgiPk1heTwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJycy1kYXkiPjE8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icnMteWVhciI+MjAyNDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPC9zZWN0aW9uPg0KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImNvbC14cy03IGNvbC1zbS03IGNvbC1sZy0zIGNvbC14bC0yIHJlc3VsdC10aW1lIj4NCiAgICAgICAgICAgICAgICA8ZGl2PjxzcGFuPldlZG5lc2RheTwvc3Bhbj48L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2PjxzcGFuPlN0YXJ0czogPC9zcGFuPjA4MDA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2PjxzcGFuPkVuZHM6IDwvc3Bhbj4xNjAwPC9kaXY+DQogICAgICAgICAgICA8L3NlY3Rpb24+DQogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iY29sLXhzLTEyIGNvbC1zbS02IGNvbC1sZy03ICBjb2wteGwtNCByZXN1bHQtaW5mbyI+DQogICAgICAgICAgICAgICAgPGRpdj48c3Bhbj5FbXBsb3llcjogPC9zcGFuPkNvbnN0cnVjdGlvbiBDbzwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXY+PHNwYW4+Sm9iIE5hbWU6IDwvc3Bhbj5QYXZpbmc8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2PjxzcGFuPkxvY2F0aW9uOiA8L3NwYW4+TWFpbiBTdC48L2Rpdj4NCiAgICAgICAgICAgIDwvc2VjdGlvbj4NCiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJjb2wteHMtMTIgY29sLXNtLTEyIGNvbC1sZy0xMiBjb2wteGwtNCByZXN1bHQtYWN0aW9uIj4NCiAgICAgICAgICAgICAgICA8ZGl2PjxzcGFuPk9mZmljZXI6IDwvc3Bhbj5SeWFuLCBEYW5pZWw8L2Rpdj4NCiAgICAgICAgICAgICAgICA8c2VjdGlvbj4NCiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi1wcmltYXJ5IGJ0bi1zbSBidG4tcmlnaHQiDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIiBydW5hdD0ic2VydmVyIiBvbmNsaWNrPSJzcGluU3VibWl0KHRoaXMsJ2J0blNob3dEZXRhaWxzJywnNDcwOCcpIiA+VmlldyBEZXRhaWxzPC9idXR0b24+DQogICAgICAgICAgICAgICAgPC9zZWN0aW9uPg0KICAgICAgICAgICAgPC9zZWN0aW9uPg0KICAgICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCjwvZGl2PmRkZVaPv0gLB3bGqm3jOfiqMDPxRV2W7hBJv2QQJnqr9ns="></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="92B7C99E"></span><span style="display: none !important;"><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAATjT0Ga2adEM3VDVZJ9A6Fv70OchO7F3BG3PsQTkLswd4e6zyCcMVWUtEYyN1U/3dmySTx1etXM9b3ivIrnnw7VhqtlJ5mpyGitDuXl70PAwiRFP9FoEb1Xt0dBdqvPaRo="></span></form>
+       
+   <script src="App_Themes/NewXtraDuty/js/tether.min.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/bootstrap4/bootstrap.4.0.0.min.js"></script>
+   
+   <!--<script src="App_Themes/NewXtraDuty/js/moment.min.js"></script>-->
+   <script src="App_Themes/NewXtraDuty/js/daterangepicker.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/btstrp-datepicker.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/btstrp-slider-setpriority.js"></script>
+   
+   <script src="App_Themes/NewXtraDuty/js/Chart.bundle.min.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/Chart.global.settings.js"></script>
+   
+   <script src="App_Themes/NewXtraDuty/js/smoke.min.js"></script>
+   <!--<script src="App_Themes/NewXtraDuty/js/smoke.init.js"></script>-->
+   
+   <!--<script src="App_Themes/NewXtraDuty/js/range-slider.js"></script>-->
+   
+   <script src="App_Themes/NewXtraDuty/js/plugins.js"></script>
+   <script src="App_Themes/NewXtraDuty/js/App.js"></script>
+   
+   <script src="App_Themes/NewXtraDuty/js/ie10-viewport-bug-workaround.js"></script>
+   
+       <script type="text/javascript">
+           $(function () {
+               function cb(start, end) {
+                   $('#reportrange span').html(start.format('MMM. D, YYYY') + ' - ' + end.format('MMM. D, YYYY'));
+                   $get('hfStartDate').value = start.format('MM/DD/YYYY');
+                   $get('hfEndDate').value = end.format('MM/DD/YYYY');
+                   __doPostBack("HiddenLinkButton", "");
+               }
+               cb(moment($get('hfStartDate').value, "MM/DD/YYYY"), moment($get('hfEndDate').value, "MM/DD/YYYY"));
+   
+               $('#reportrange').daterangepicker({
+                   ranges: {
+                       'Today': [moment(), moment()],
+                       'Tomorrow': [moment().add(1, 'days'), moment().add(1, 'days')],
+                       'Next Week': [moment().add(0, 'days'), moment().add(6, 'days')],
+                       'Next 4 Weeks': [moment(), moment().add(27, 'days')],
+                       'This Month': [moment().startOf('month'), moment().endOf('month')],
+                       'Next Month': [moment().add(1, 'month').startOf('month'), moment().add(1, 'month').endOf('month')],
+                       'Next 3 Months': [moment(), moment().add(3, 'months')]
+                   }
+               }, cb);
+   
+           });
+       </script>
+   
+   
+   
+   <div class="daterangepicker dropdown-menu ltr opensright"><div class="ranges"><ul><li data-range-key="Today">Today</li><li data-range-key="Tomorrow">Tomorrow</li><li data-range-key="Next Week">Next Week</li><li data-range-key="Next 4 Weeks">Next 4 Weeks</li><li data-range-key="This Month">This Month</li><li data-range-key="Next Month">Next Month</li><li data-range-key="Next 3 Months">Next 3 Months</li><li data-range-key="Custom Range">Custom Range</li></ul><div class="range_inputs"><button class="applyBtn btn btn-sm btn-success" disabled="disabled" type="button">Apply</button> <button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button></div></div><div class="calendar left"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div></div></body></html>

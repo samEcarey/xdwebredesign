@@ -1,0 +1,65 @@
+<?php /* ----------------------------------------------------------
+ * Home: Front-Page
+ *-------------------------------------------------------------*/ ?>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="card">
+			<div class="card-block">
+				<h2>Welcome to Xtra Duty!</h2>
+				<p>Please click on one of the buttons above to get started.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6 col-xl-3">
+		<div class="card card-block">
+		  <h3 class="card-title">Job History</h3>
+		  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		  <a href="#" class="btn btn-primary">View</a>
+		</div>
+	</div>
+	<div class="col-md-6 col-xl-3">
+		<div class="card card-block">
+		  <h3 class="card-title">Available Jobs</h3>
+		  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		  <a href="#" class="btn btn-primary">View</a>
+		</div>
+	</div>
+	<div class="col-md-6 col-xl-3">
+		<div class="card card-block">
+		  <h3 class="card-title">My Calendar</h3>
+		  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		  <a href="#" class="btn btn-primary">View</a>
+		</div>
+	</div>
+	<div class="col-md-6 col-xl-3">
+		<div class="card card-block">
+		  <h3 class="card-title">My Profile</h3>
+		  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		  <a href="#" class="btn btn-primary">View</a>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-6">
+		<div class="card">
+			<div class="card-block">
+				<h4 class="card-title">Messages from the Administration </h4>
+				<p class="card-text">Welcome to the Xtra Duty Portal!</p>
+				<p class="card-text">The agency can post any important messages to its employees in this space. These messages can include upcoming events, policy changes or whatever information you feel you need to communicate to your employees.</p>
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+			<div class="card-block">
+				<a href="#" class="card-link"><< Previous</a>
+				<a href="#" class="card-link">Next >></a>
+			</div>
+		</div>
+	</div>
+</div>
