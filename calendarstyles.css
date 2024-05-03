@@ -1,0 +1,105 @@
+ /* Apply border radius to the table */
+ .filters-container {
+     display: flex;
+     width: 25%;
+     background: transparent !important;
+     flex-direction: column;
+     margin-right: 20px;
+
+ }
+
+ .new-card {
+     border-radius: 10px !important;
+     border: 0px !important;
+     background-color: transparent !important;
+     /* display: flex; */
+     flex-direction: column;
+     padding: 0px !important;
+     margin: 0px !important;
+ }
+
+ .box-shadow {
+     -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+ }
+
+ .active-card {
+     margin-bottom: 15px;
+     padding: 15px 15px 15px 15px;
+     background: WHITE;
+     border-radius: 0px;
+ }
+
+ .active-card *:last-child {
+     margin-bottom: 0px;
+ }
+
+ .rounded-table {
+     border-radius: 10px !important;
+     border: 1px solid red;
+     width: 100px;
+     overflow: hidden;
+     background: white;
+     /* background-color: red; */
+     /* Ensures rounded corners */
+ }
+
+ .input-and-apply {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* margin: 0px !important; */
+ }
+
+ .new-input-field {
+     display: flex;
+     border: 0px;
+     width: 100%;
+     /* margin: 0px !important; */
+ }
+
+ .month-arrows {
+     background-color: transparent;
+     border: 0px !important;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     /* height: 30px !important; */
+
+ }
+
+ .month-arrows:hover {
+     color: #fff;
+     background-color: #025aa5;
+     border-color: #01549b;
+ }
+
+ .filter-container {
+     display: flex;
+
+ }
+
+ .calendar-filter {
+     padding: 0px !important;
+ }
+
+ .remove-margin {
+     border: 1px solid red;
+     margin-right: 0px !important;
+ }
+
+
+
+ .calendar-legend-container {
+     width: 100%;
+     display: flex;
+     justify-content: end;
+ }
+
+ .calendar-legend-tags {
+     width: fit-content;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
