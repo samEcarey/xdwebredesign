@@ -340,7 +340,7 @@
                     </div>
                 </header>
                 <!-- BODY -->
-                <main class="container-fluid" style="display: flex; ">
+                <main class="container-fluid" style="display: flex; width: 100%;">
                     <input type="hidden" name="hfCkAvailableJobs" id="hfCkAvailableJobs" value="true" />
                     <input type="hidden" name="hfCkPartialFill" id="hfCkPartialFill" value="true" />
                     <input type="hidden" name="hfCkAssignedJobs" id="hfCkAssignedJobs" value="true" />
@@ -349,111 +349,116 @@
                     <input type="hidden" name="hfTxtSearchBox" id="hfTxtSearchBox" />
                     <input type="hidden" name="hfFirstDay" id="hfFirstDay" />
                     <!-- CALENDAR ACTIONS TOP ROW -->
-                    <div class="filters-container" >
-                        <!-- SEARCH CONTAINER -->
-                        <div class="card-admin input-and-apply">
-                            <input class="new-input-field" id="txtSearchBox" name="txtSearchBox" type="text"
-                                placeholder="FILTER - Type here to filter on matching text"
-                                style="width: 200px; font-size: small;"
-                                onKeyUp="FilterChanged(this, $get('hfTxtSearchBox'));" />
-                            <button id="btnApply" class="btn btn-sm btn-primary" type="button"
-                                onclick="HandleApplyFilter(&#39;btnApply&#39;,&#39;#txtSearchBox&#39;);">Apply</button>
+                    <div class="filters-container">
+                        <h2>Filters</h2>
+                        <div class="filters-main">
+                            <!-- SEARCH CONTAINER -->
+                            <div class="card-admin filter-container ">
+                                <span class="filter-label">Filter on matching text: </span>
+                                <input class="new-input-field" id="txtSearchBox" name="txtSearchBox" type="text"
+                                    placeholder="Type here to filter"
+                                    onKeyUp="FilterChanged(this, $get('hfTxtSearchBox'));" />
+                                <button id="btnApply" class="btn btn-sm btn-primary new-button" type="button"
+                                    onclick="HandleApplyFilter(&#39;btnApply&#39;,&#39;#txtSearchBox&#39;);">Apply</button>
+                            </div>
+                            <!-- VEHICLE REQUIRED -->
+                            <div class="card-admin filter-container ">
+                                <span class="filter-label">Vehicle Required: </span>
+                                <select class="new-input-field" name="ddlVehicleRequired"
+                                    onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlVehicleRequired\&#39;,\&#39;\&#39;)&#39;, 0)"
+                                    id="ddlVehicleRequired">
+                                    <option selected="selected" value="Any">Any</option>
+                                    <option value="Required">Required</option>
+                                    <option value="Not Required">Not Required</option>
+                                </select>
+                            </div>
+                            <!-- FILTERS -->
+                            <div class="card-admin filter-container ">
+                                <span class="filter-label">Status: </span>
+                                <div class="status">
+                                    <div class="job-status">
+                                        <label class="label remove-margin">
+                                            <input class="label__checkbox" type="checkbox" id="ckAvailableJobs"
+                                                onclick="HandleFilterButton('ckavailablejobs',this);" />
+                                            <span class="label__text  Calendar-Available-Jo">
+                                                <span class="label__check remove-margin">
+                                                    <i class="fa fa-check icon"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="Calendar-Filter-Checkbox Calendar-Available-Job">Open</label>
+                                        <!-- <label> Show number of jobs here</label> -->
+                                    </div>
+                                    <div class="job-status">
+                                        <label class="label remove-margin">
+                                            <input class="label__checkbox" type="checkbox" id="ckPartialFill"
+                                                onclick="HandleFilterButton('ckpartialfill',this);" />
+                                            <span class="label__text">
+                                                <span class="label__check remove-margin">
+                                                    <i class="fa fa-check icon"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="Calendar-Filter-Checkbox Calendar-Partial-Fill">Partial
+                                            Fill</label>
+                                    </div>
+                                    <div class="job-status">
+                                        <label class="label remove-margin">
+                                            <input class="label__checkbox" type="checkbox" id="ckAssignedJobs"
+                                                onclick='HandleFilterButton("ckassignedjobs",this);' />
+                                            <span class="label__text">
+                                                <span class="label__check remove-margin">
+                                                    <i class="fa fa-check icon"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="Calendar-Filter-Checkbox Calendar-Assigned-Job">Assigned</label>
+                                    </div>
+                                    <div class="job-status">
+                                        <label class="label remove-margin">
+                                            <input class="label__checkbox" type="checkbox" id="ckMyJobs"
+                                                onclick='HandleFilterButton("ckmyjobs", this);' />
+                                            <span class="label__text">
+                                                <span class="label__check remove-margin">
+                                                    <i class="fa fa-check icon"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="Calendar-Filter-Checkbox Calendar-My-Job">My Jobs</label>
+                                    </div>
+                                    <div class="job-status">
+                                        <label class="label remove-margin">
+                                            <input class="label__checkbox" type="checkbox" id="ckRequestedJobs"
+                                                onclick='HandleFilterButton("ckrequestedjobs", this);' />
+                                            <span class="label__text">
+                                                <span class="label__check remove-margin">
+                                                    <i class="fa fa-check icon"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="Calendar-Filter-Checkbox Calendar-Requested-Job">Requested</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- VEHICLE REQUIRED -->
-                        <div class="">
-                            <span>Vehicle Required: </span>
-                            <select name="ddlVehicleRequired"
-                                onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlVehicleRequired\&#39;,\&#39;\&#39;)&#39;, 0)"
-                                id="ddlVehicleRequired">
-                                <option selected="selected" value="Any">Any</option>
-                                <option value="Required">Required</option>
-                                <option value="Not Required">Not Required</option>
-
-                            </select>
-                        </div>
-                        <!-- FILTERS -->
-                        <div class="">
-                            <div class="">
-                                <label class="label calendar-filter">
-                                    <input class="label__checkbox" type="checkbox" id="ckAvailableJobs"
-                                        onclick="HandleFilterButton('ckavailablejobs',this);" />
-                                    <span class="label__text  Calendar-Available-Jo">
-                                        <span class="label__check remove-margin">
-                                            <i class="fa fa-check icon"></i>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="Calendar-Filter-Checkbox Calendar-Available-Job">Open</label>
-                                <!-- <label> Show number of jobs here</label> -->
-                            </div>
-                            <div class="">
-                                <label class="label">
-                                    <input class="label__checkbox" type="checkbox" id="ckPartialFill"
-                                        onclick="HandleFilterButton('ckpartialfill',this);" />
-                                    <span class="label__text">
-                                        <span class="label__check remove-margin">
-                                            <i class="fa fa-check icon"></i>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="Calendar-Filter-Checkbox Calendar-Partial-Fill">Partial
-                                    Fill</label>
-                            </div>
-                            <div class="">
-                                <label class="label">
-                                    <input class="label__checkbox" type="checkbox" id="ckAssignedJobs"
-                                        onclick='HandleFilterButton("ckassignedjobs",this);' />
-                                    <span class="label__text">
-                                        <span class="label__check remove-margin">
-                                            <i class="fa fa-check icon"></i>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="Calendar-Filter-Checkbox Calendar-Assigned-Job">Assigned</label>
-                            </div>
-                            <div class="">
-                                <label class="label">
-                                    <input class="label__checkbox" type="checkbox" id="ckMyJobs"
-                                        onclick='HandleFilterButton("ckmyjobs", this);' />
-                                    <span class="label__text">
-                                        <span class="label__check remove-margin">
-                                            <i class="fa fa-check icon"></i>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="Calendar-Filter-Checkbox Calendar-My-Job">My Jobs</label>
-                            </div>
-                            <div class="">
-                                <label class="label">
-                                    <input class="label__checkbox" type="checkbox" id="ckRequestedJobs"
-                                        onclick='HandleFilterButton("ckrequestedjobs", this);' />
-                                    <span class="label__text">
-                                        <span class="label__check remove-margin">
-                                            <i class="fa fa-check icon"></i>
-                                        </span>
-                                    </span>
-                                </label>
-                                <label class="Calendar-Filter-Checkbox Calendar-Requested-Job">Requested</label>
-                            </div>
-                        </div>
-
                     </div>
                     <!-- CALENDAR CONTAINER-->
-                    <div class="" style="margin-bottom: 15px;">
+                    <div class="calendar-container">
                         <!-- CALENDAR HEADER -->
-                        <div class="row" style="padding: 0px 0px 10px 0px">
-                            <!-- CALENDAR ARROWS AND DATE-->
-                            <div class="" style="min-width: 300px; text-align: center; display: flex;">
-                                <input class="month-arrows" type="submit" name="cmdPrevMonth" value="&lt;"
-                                    onclick="spinSubmit(this, &#39;btnPrevMonth&#39;,&#39;&#39;);" id="cmdPrevMonth"
-                                    style="width:30px;" />
-                                <span id="txtMonthName" style="display:inline-block;width:200px;text-align: center;">May
-                                    2024</span>
-                                <input class="month-arrows" type="submit" name="cmdNextMonth" value=">"
-                                    onclick="spinSubmit(this, &#39;btnNextMonth&#39;,&#39;&#39;);" id="cmdNextMonth"
-                                    style="width:30px;" />
-                                <!-- LEGEND CONTAINER-->
-                                <div class="calendar-legend-container">
+                        <div class="calendar-actions" style="min-width: 300px; text-align: center; display: flex;">
+                            <input class="month-arrows" type="submit" name="cmdPrevMonth" value="&lt;"
+                                onclick="spinSubmit(this, &#39;btnPrevMonth&#39;,&#39;&#39;);" id="cmdPrevMonth"
+                                style="width:30px;" />
+                            <span id="txtMonthName"
+                                style="display:inline-block;width:200px;text-align: center; align-content: center;">May
+                                2024</span>
+                            <input class="month-arrows" type="submit" name="cmdNextMonth" value=">"
+                                onclick="spinSubmit(this, &#39;btnNextMonth&#39;,&#39;&#39;);" id="cmdNextMonth"
+                                style="width:30px;" />
+                            <!-- LEGEND CONTAINER-->
+                            <div class="calendar-legend-container">
+                                <span class="filter-label" style="padding-right: 5px;">Legend: </span>
+                                <div class="calendar-legend-list">
                                     <div class="work-day calendar-legend-tags "
                                         style="border-style: solid; border-width: 1px; border-color: #f2f2f2; font-size: small; width: 100px; border-radius: 5px;">
                                         Work Day
