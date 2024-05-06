@@ -17,8 +17,13 @@
 <!-- <link rel="icon" href="App_Themes/ExtraDuty/img/favicon-32x32.png" type="image/png" /> -->
 <!-- <link rel="shortcut icon" href="App_Themes/ExtraDuty/img/favicon-32x32.png" type="image/png" /> -->
 
-<!--===== CSS =====-->
-<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald" rel="stylesheet" /><link rel="stylesheet" href="App_Themes/NewXtraDuty/bootstrap.min.css" /><link rel="stylesheet" href="App_Themes/NewXtraDuty/font-awesome.min.css" /><link rel="stylesheet" href="App_Themes/NewXtraDuty/toastr.css" type="text/css" /><link rel="stylesheet" href="App_Themes/NewXtraDuty/datepicker.css" type="text/css" /><link rel="stylesheet" href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.css" type="text/css" />
+    <!--===== CSS =====-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald" rel="stylesheet" />
+    <link rel="stylesheet" href="App_Themes/NewXtraDuty/bootstrap.min.css" />
+    <link rel="stylesheet" href="App_Themes/NewXtraDuty/font-awesome.min.css" />
+    <link rel="stylesheet" href="App_Themes/NewXtraDuty/toastr.css" type="text/css" />
+    <link rel="stylesheet" href="App_Themes/NewXtraDuty/datepicker.css" type="text/css" />
+    <link rel="stylesheet" href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.css" type="text/css" />
 
 
 <!--===== Modernizr =====-->
@@ -56,16 +61,31 @@
     }
     function quietSubmit(mybutton, command, argument) {
             __doPostBack(command, argument);
-    }
-</script>
-<link href="App_Themes/NewXtraDuty/ASPModal.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/bootstrap.min.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/bootstrap-timepicker.min.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/datepicker.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/font-awesome.min.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/ionicons.min.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/style.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.min.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/tether.min.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/toastr.css" type="text/css" rel="stylesheet" /><link href="App_Themes/NewXtraDuty/toastr.min.css" type="text/css" rel="stylesheet" /></head>
-    <body>
-        <form method="post" action="./redesign-dashboard.html" id="form1" class="form-horizontal">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE1MzkxNTM3OA9kFgICAQ9kFhICBA8WAh4EVGV4dAUJQXV0aCBUZXN0ZAIGDxYCHwAFH1BheXRvbiBKb3ljZSAoTk9SVEhXRVNUIFJFR0lPTilkAg8PFgIfAAUGUGF5dG9uZAIRDxYCHwAFpwc8bGk+PGEgaHJlZj0id2ZPZmZpY2VyTGFuZGluZy5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtZGFzaGJvYXJkIj48L2k+PHNwYW4+IERhc2hib2FyZDwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3Zk15SGlzdG9yeS5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtaGlzdG9yeSI+PC9pPjxzcGFuPiBKb2IgSGlzdG9yeTwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3ZkF2YWlsYWJsZUpvYnMuYXNweCI+PGkgY2xhc3M9ImZhIGZhLWxpc3QiPjwvaT48c3Bhbj4gQXZhaWxhYmxlIEpvYnM8L3NwYW4+PC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0id2ZNeUNhbGVuZGFyLmFzcHgiPjxpIGNsYXNzPSJmYSBmYS1jYWxlbmRhciI+PC9pPjxzcGFuPiBNeSBTY2hlZHVsZTwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3ZkFzc2lnbmVkSm9icy5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtd3JlbmNoIj48L2k+PHNwYW4+IEFzc2lnbmVkIEpvYnM8L3NwYW4+PC9hPjwvbGk+DQo8bGkgY2xhc3M9ImNvbGxhcHNlZCIgZGF0YS10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLXRhcmdldD0iI215YWNjb3VudG1lbnUiPjxhIGhyZWY9IiMwIj48aSBjbGFzcz0iZmEgZmEtdXNlciI+PC9pPjxzcGFuPiBNeSBBY2NvdW50PC9zcGFuPjxpIGNsYXNzPSJmYSBmYS1hbmdsZS1yaWdodCI+PC9pPjwvYT48L2xpPjx1bCBjbGFzcz0ic3ViLW1lbnUgY29sbGFwc2UiIGlkPSJteWFjY291bnRtZW51Ij4NCjxsaT48YSBocmVmPSJ3ZlByZWZlcmVuY2VzLmFzcHgiPkVkaXQgUHJvZmlsZTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9IndmUGFzc3dvcmQuYXNweCI+Q2hhbmdlIFBhc3N3b3JkPC9hPjwvbGk+DQo8L3VsPg0KPGxpPjxhIGhyZWY9IndmU2lnbk91dC5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtcG93ZXItb2ZmIj48L2k+PHNwYW4+IFNpZ24gT3V0PC9zcGFuPjwvYT48L2xpPmQCFA8WAh8ABY0FPGhlYWRlciBjbGFzcz0iY29udGFpbmVyLWZsdWlkIj4NCiAgICA8ZGl2IGNsYXNzPSJyb3cgY29sLXhzLTEyIHVzZXItYWxlcnQiPg0KDQogICAgICA8L2Rpdj4gICAgPGRpdiBjbGFzcz0icm93Ij4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29sLXhzLTEyIGNhcmQtYWRtaW4gY2FyZC1wYWdldGl0bGUiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJyb3cgY29sLXhzLTEyIj4NCiAgICAgICAgICAgIDxIMSBjbGFzcz0iY29sLXhzLTEyIGNvbC1tZC03IGNvbC1sZy05Ij5BdXRoIFRlc3Q8L0gxPg0KICAgICAgICAgICAgPGltZyBjbGFzcz0iY29sLXhzLTEyIGNvbC1tZC00IGNvbC1sZy0yIiBzdHlsZT0ibWFyZ2luLXRvcDogLTE1cHg7bWFyZ2luLWJvdHRvbToxMHB4O3dpZHRoOmF1dG87aGVpZ2h0OjEwMCU7IiBzcmM9Ii9BcHBfVGhlbWVzL05ld1h0cmFEdXR5L2ltZy9Lbm94dmlsbGVMb2dvWERhbi5qcGVnIj4NCiAgICAgICAgPC9kaXY+ICAgICAgICAgICAgPHVsIGNsYXNzPSJicmVhZGNydW1iIj4NCiAgICAgICAgICAgICAgICA8bGkgY2xhc3M9ImFjdGl2ZSI+PGEgaHJlZj0id2ZPZmZpY2VyTGFuZGluZy5hc3B4Ij5Ib21lPC9hPjwvbGk+DQogICAgICAgICAgICAgPC91bD4NCiAgICAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KPC9oZWFkZXI+DQpkAhwPDxYCHgdWaXNpYmxlaGRkAh4PDxYCHwAFATBkZAIiDw8WAh8ABQQyMjE1ZGQCJA8PFgIfAAWFAldlbGNvbWUgdG8gdGhlIFh0cmEgRHV0eSBPZmZpY2VyIFBvcnRhbCE8YnIgLz4KPGJyIC8+ClRoZSBhZ2VuY3kgY2FuIHBvc3QgYW55IGltcG9ydGFudCBtZXNzYWdlcyB0byBpdHMgb2ZmaWNlcnMgaW4gdGhpcyBzcGFjZS4gVGhlc2UgbWVzc2FnZXMgY2FuIGluY2x1ZGUgdXBjb21pbmcgZXZlbnRzLCBwb2xpY3kgY2hhbmdlcyBvciB3aGF0ZXZlciBpbmZvcm1hdGlvbiB5b3UgZmVlbCB5b3UgbmVlZCB0byBjb21tdW5pY2F0ZSB0byB5b3VyIG9mZmljZXJzLmRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQ1pYlNob3dIaWRlU1NO7LJlfn12ZNvT+eKmu4+Lxhco+B2ABLXVia4K4JxAEsg=" />
-</div>
+        }
+    </script>
+    <link href="App_Themes/NewXtraDuty/ASPModal.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/bootstrap-timepicker.min.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/datepicker.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/ionicons.min.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.min.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/tether.min.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/toastr.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/NewXtraDuty/toastr.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="App_Themes/NewXtraDuty/dashboardstyle.css" type="text/css" />
+</head>
+
+<body>
+    <form method="post" action="./redesign-dashboard.html" id="form1" class="form-horizontal">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="/wEPDwUKLTE1MzkxNTM3OA9kFgICAQ9kFhICBA8WAh4EVGV4dAUJQXV0aCBUZXN0ZAIGDxYCHwAFH1BheXRvbiBKb3ljZSAoTk9SVEhXRVNUIFJFR0lPTilkAg8PFgIfAAUGUGF5dG9uZAIRDxYCHwAFpwc8bGk+PGEgaHJlZj0id2ZPZmZpY2VyTGFuZGluZy5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtZGFzaGJvYXJkIj48L2k+PHNwYW4+IERhc2hib2FyZDwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3Zk15SGlzdG9yeS5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtaGlzdG9yeSI+PC9pPjxzcGFuPiBKb2IgSGlzdG9yeTwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3ZkF2YWlsYWJsZUpvYnMuYXNweCI+PGkgY2xhc3M9ImZhIGZhLWxpc3QiPjwvaT48c3Bhbj4gQXZhaWxhYmxlIEpvYnM8L3NwYW4+PC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0id2ZNeUNhbGVuZGFyLmFzcHgiPjxpIGNsYXNzPSJmYSBmYS1jYWxlbmRhciI+PC9pPjxzcGFuPiBNeSBTY2hlZHVsZTwvc3Bhbj48L2E+PC9saT4NCjxsaT48YSBocmVmPSJ3ZkFzc2lnbmVkSm9icy5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtd3JlbmNoIj48L2k+PHNwYW4+IEFzc2lnbmVkIEpvYnM8L3NwYW4+PC9hPjwvbGk+DQo8bGkgY2xhc3M9ImNvbGxhcHNlZCIgZGF0YS10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLXRhcmdldD0iI215YWNjb3VudG1lbnUiPjxhIGhyZWY9IiMwIj48aSBjbGFzcz0iZmEgZmEtdXNlciI+PC9pPjxzcGFuPiBNeSBBY2NvdW50PC9zcGFuPjxpIGNsYXNzPSJmYSBmYS1hbmdsZS1yaWdodCI+PC9pPjwvYT48L2xpPjx1bCBjbGFzcz0ic3ViLW1lbnUgY29sbGFwc2UiIGlkPSJteWFjY291bnRtZW51Ij4NCjxsaT48YSBocmVmPSJ3ZlByZWZlcmVuY2VzLmFzcHgiPkVkaXQgUHJvZmlsZTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9IndmUGFzc3dvcmQuYXNweCI+Q2hhbmdlIFBhc3N3b3JkPC9hPjwvbGk+DQo8L3VsPg0KPGxpPjxhIGhyZWY9IndmU2lnbk91dC5hc3B4Ij48aSBjbGFzcz0iZmEgZmEtcG93ZXItb2ZmIj48L2k+PHNwYW4+IFNpZ24gT3V0PC9zcGFuPjwvYT48L2xpPmQCFA8WAh8ABY0FPGhlYWRlciBjbGFzcz0iY29udGFpbmVyLWZsdWlkIj4NCiAgICA8ZGl2IGNsYXNzPSJyb3cgY29sLXhzLTEyIHVzZXItYWxlcnQiPg0KDQogICAgICA8L2Rpdj4gICAgPGRpdiBjbGFzcz0icm93Ij4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29sLXhzLTEyIGNhcmQtYWRtaW4gY2FyZC1wYWdldGl0bGUiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJyb3cgY29sLXhzLTEyIj4NCiAgICAgICAgICAgIDxIMSBjbGFzcz0iY29sLXhzLTEyIGNvbC1tZC03IGNvbC1sZy05Ij5BdXRoIFRlc3Q8L0gxPg0KICAgICAgICAgICAgPGltZyBjbGFzcz0iY29sLXhzLTEyIGNvbC1tZC00IGNvbC1sZy0yIiBzdHlsZT0ibWFyZ2luLXRvcDogLTE1cHg7bWFyZ2luLWJvdHRvbToxMHB4O3dpZHRoOmF1dG87aGVpZ2h0OjEwMCU7IiBzcmM9Ii9BcHBfVGhlbWVzL05ld1h0cmFEdXR5L2ltZy9Lbm94dmlsbGVMb2dvWERhbi5qcGVnIj4NCiAgICAgICAgPC9kaXY+ICAgICAgICAgICAgPHVsIGNsYXNzPSJicmVhZGNydW1iIj4NCiAgICAgICAgICAgICAgICA8bGkgY2xhc3M9ImFjdGl2ZSI+PGEgaHJlZj0id2ZPZmZpY2VyTGFuZGluZy5hc3B4Ij5Ib21lPC9hPjwvbGk+DQogICAgICAgICAgICAgPC91bD4NCiAgICAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KPC9oZWFkZXI+DQpkAhwPDxYCHgdWaXNpYmxlaGRkAh4PDxYCHwAFATBkZAIiDw8WAh8ABQQyMjE1ZGQCJA8PFgIfAAWFAldlbGNvbWUgdG8gdGhlIFh0cmEgRHV0eSBPZmZpY2VyIFBvcnRhbCE8YnIgLz4KPGJyIC8+ClRoZSBhZ2VuY3kgY2FuIHBvc3QgYW55IGltcG9ydGFudCBtZXNzYWdlcyB0byBpdHMgb2ZmaWNlcnMgaW4gdGhpcyBzcGFjZS4gVGhlc2UgbWVzc2FnZXMgY2FuIGluY2x1ZGUgdXBjb21pbmcgZXZlbnRzLCBwb2xpY3kgY2hhbmdlcyBvciB3aGF0ZXZlciBpbmZvcm1hdGlvbiB5b3UgZmVlbCB5b3UgbmVlZCB0byBjb21tdW5pY2F0ZSB0byB5b3VyIG9mZmljZXJzLmRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQ1pYlNob3dIaWRlU1NO7LJlfn12ZNvT+eKmu4+Lxhco+B2ABLXVia4K4JxAEsg=" />
+        </div>
 
 <script type="text/javascript">
 //<![CDATA[
@@ -304,9 +324,9 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [
         <span>Welcome, Payton</span>       
         <ul>
 <!--            <li><a href="#0"><i class="fa fa-envelope"></i></a></li>-->
-            <li><a href="wfPreferences.aspx"><i class="fa fa-user"></i></a></li>
+            <li><a href="wfPreferences.aspx"><i class="fa fa-user "></i></a></li>
 <!--            <li><a href="#0"><i class="fa fa-cog"></i></a></li>-->
-            <li><a href="wfSignOut.aspx"><i class="fa fa-power-off"></i></a></li>
+            <li><a href="wfSignOut.aspx"><i class="fa fa-power-off "></i></a></li>
         </ul>
     </div>
 </div>
@@ -340,7 +360,9 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [
         <div class="col-xs-12 card-admin card-pagetitle">
         <div class="row col-xs-12">
             <H1 class="col-xs-12 col-md-7 col-lg-9">Auth Test</H1>
-            <img class="col-xs-12 col-md-4 col-lg-2" style="margin-top: -15px;margin-bottom:10px;width:auto;height:100%;" src="/App_Themes/NewXtraDuty/img/KnoxvilleLogoXDan.jpeg">
+            <div class="image-circle">
+            <img class="col-xs-12 col-md-4 col-lg-2 img-knoxville " src="/App_Themes/NewXtraDuty/img/KnoxvilleLogoXDan.png">
+        </div>
         </div>            <ul class="breadcrumb">
                 <li class="active"><a href="redesign-dashboard.html">Home</a></li>
              </ul>
@@ -348,129 +370,161 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [
     </div>
 </header>
 
-                    <main class="container-fluid">
-                    <div class="row">
-           	            <div class="col-xs-12 col-lg-8">
-        	                <div class="card-admin">
-                                <input type="hidden" name="hfLineChartLabels" id="hfLineChartLabels" value="[ &#39;Dec&#39;, &#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39; ]" />
-                                <input type="hidden" name="hfLineChartData0" id="hfLineChartData0" value="[ 0, 0, 0, 0, 0, 0 ]" />
-                                <input type="hidden" name="hfLineChartData1" id="hfLineChartData1" value="[ 0, 0, 0, 0, 0, 0 ]" />
-	                            <section style="width:98.9%;">
-           	    	                <canvas id="chartjsLine" width="400" height="200"></canvas>
-        	                    </section>
-                            </div>
-                            
-			                <div class="row">
-				                <div class="col-xs-12 col-sm-12 col-lg-12">
-					                <div class="card-admin">
-	                                    <div class="card-top">
-		                                    <h2>Welcome!</h2>
-	                                    </div>
-	                                    <div class="card-block">
-		                                    <p>Please select an option from the menu to get started. Your agency has made this site available to you so that you can manage your work life better and earn more money. Please let them know how much you like it.</p>
-	                                    </div>
-                                    </div>				
-				                </div>          		        
-			                </div>
-        	            </div>
-		                <div class="col-xs-12 col-lg-4">
-			                <div class="widget widget-primary-darker">
-	                            <section class="widget-title">
-		                            <div>
-			                            <i class="fa fa-history"></i>
-			                            <h2>Job History</h2>
-		                            </div>
-				                    <button class="btn btn-primary btn-sm" id="Button1" type="button" onclick="spinSubmit(this,'btnViewJobHistory','')">View</button>
-	                            </section>
-	                            <section class="widget-block">
-		                            <p><strong><span id="txtUnverifiedJobs">0</span> Jobs</strong>  are waiting to be verified.</p>
-	                            </section>
-	                            <section class="widget-footer">
-
-	                            </section>
-                            </div>			
-                            <div class="widget widget-primary-light" id="AvailableJobsCard">
-	                            <section class="widget-title">
-		                            <div>
-			                            <i class="fa fa-history"></i>
-			                            <h2>Available Jobs</h2>
-		                            </div>
-			                        <button id="Button2" class="btn btn-primary btn-sm" type="button" onclick="spinSubmit(this,&#39;btnViewAvailableJobs&#39;,&#39;&#39;)">View</button>
-	                            </section>
-	                            <section class="widget-block">
-		                            <p><strong><span id="txtAvailableJobCount">2215</span> Jobs</strong> are currently available.</p>
-	                            </section>
-	                            <section class="widget-footer">
-
-	                            </section>
-                            </div>			
-                            <div class="widget widget-accent">
-	                            <section class="widget-title">
-		                            <div>
-			                            <i class="fa fa-history"></i>
-			                            <h2>My Calendar</h2>
-		                            </div>
-						                        <button class="btn btn-primary btn-sm" id="btnViewMyCalendar" type="button" onclick="spinSubmit(this,'btnViewMyCalendar','')">View</button>
-	                            </section>
-	                            <section class="widget-block">
-		                            <p>View upcoming job assignments and requests.</p>
-	                            </section>
-	                            <section class="widget-footer">
-
-	                            </section>
-                            </div>			
-                            <div class="widget widget-accent-alt">
-	                            <section class="widget-title">
-		                            <div>
-			                            <i class="fa fa-history"></i>
-			                            <h2>Profile</h2>
-		                            </div>
-						                <button class="btn btn-primary btn-sm" id="btnViewMyProfile" type="button" onclick="spinSubmit(this,'btnViewMyProfile','')">View</button>
-	                            </section>
-	                            <section class="widget-block">
-		                            <p>Update your contact information and notification preferences.</p>
-	                            </section>
-	                            <section class="widget-footer">
-
-	                            </section>
-                            </div>		
-		                </div>
-                    </div>
- 	                    <div class="row">
-		                    <div class="col-xs-12">
-			                    <div class="card-admin">
-			                        <div class="card-top">
-				                        <h4 class="card-title">Message from the Administration</h4>
-			                        </div>
-			                        <div class="card-block">
-				                        <p class="card-text"><span id="txtWebNotice">Welcome to the Xtra Duty Officer Portal!<br />
-<br />
-The agency can post any important messages to its officers in this space. These messages can include upcoming events, policy changes or whatever information you feel you need to communicate to your officers.</span></p>
-			                        </div>
+               <!---Changed the placements here-->
+               <!---Widgets-Right to top, Welcome and msg from admin-bottom to right -->
+               <main class="container-fluid">
+                <div class="row">
+                    <!-- Row for widgets -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="widget widget-primary-darker">
+                            <!-- Job History Widget -->
+                            <section class="widget-title">
+                                <div>
+                                    <i class="fa fa-history"></i>
+                                    <h2>Job History</h2>
                                 </div>
+                                <button class="btn btn-primary btn-sm" id="Button1" type="button"
+                                    onclick="spinSubmit(this,'btnViewJobHistory','')">View</button>
+                            </section>
+                            <section class="widget-block">
+                                <p><strong><span id="txtUnverifiedJobs">0</span> Jobs</strong> are waiting to be
+                                    verified.</p>
+                            </section>
+                            <section class="widget-footer">
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="widget widget-primary-light">
+                            <!-- Available Jobs Widget -->
+                            <section class="widget-title">
+                                <div>
+                                    <i class="fa fa-history"></i>
+                                    <h2>Available Jobs</h2>
+                                </div>
+                                <button id="Button2" class="btn btn-primary btn-sm" type="button"
+                                    onclick="spinSubmit(this,&#39;btnViewAvailableJobs&#39;,&#39;&#39;)">View</button>
+                            </section>
+                            <section class="widget-block">
+                                <p><strong><span id="txtAvailableJobCount">2215</span> Jobs</strong> are currently
+                                    available.</p>
+                            </section>
+                            <section class="widget-footer">
+
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="widget widget-accent">
+                            <!-- My Calendar Widget -->
+                            <section class="widget-title">
+                                <div>
+                                    <i class="fa fa-history"></i>
+                                    <h2>My Calendar</h2>
+                                </div>
+                                <button class="btn btn-primary btn-sm" id="btnViewMyCalendar" type="button"
+                                    onclick="spinSubmit(this,'btnViewMyCalendar','')">View</button>
+                            </section>
+                            <section class="widget-block">
+                                <p>View upcoming job assignments and requests.</p>
+                            </section>
+                            <section class="widget-footer">
+
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="widget widget-accent-alt">
+                            <!-- Profile Widget -->
+                            <section class="widget-title">
+                                <div>
+                                    <i class="fa fa-history"></i>
+                                    <h2>Profile</h2>
+                                </div>
+                                <button class="btn btn-primary btn-sm" id="btnViewMyProfile" type="button"
+                                    onclick="spinSubmit(this,'btnViewMyProfile','')">View</button>
+                            </section>
+                            <section class="widget-block">
+                                <p>Update your contact information and notification preferences.</p>
+                            </section>
+                            <section class="widget-footer">
+
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row for Chart and Message Blocks -->
+                <div class="row">
+                    <!-- Chart Area -->
+                    <div class="col-xs-12 col-lg-8">
+                        <div class="card-admin rounded-card chartStyle">
+                            <input type="hidden" name="hfLineChartLabels" id="hfLineChartLabels"
+                                value="[ &#39;Dec&#39;, &#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39; ]" />
+                            <input type="hidden" name="hfLineChartData0" id="hfLineChartData0"
+                                value="[ 0, 0, 0, 0, 0, 0 ]" />
+                            <input type="hidden" name="hfLineChartData1" id="hfLineChartData1"
+                                value="[ 0, 0, 0, 0, 0, 0 ]" />
+                            <section style="width:98.9%;">
+                                <canvas id="chartjsLine" width="400" height="200"></canvas>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Welcome and Administration Message Area -->
+                    <div class="col-xs-12 col-lg-4 topPadding">
+                        <!-- Welcome Card -->
+                        <div class="card-admin rounded-card neumorphic-outset">
+                            <div class="card-top">
+                                <h2>Welcome!</h2>
+                            </div>
+                            <div class="card-block">
+                                <p>Please select an option from the menu to get started. Your agency has made this
+                                    site available to you so that you can manage your work life better and earn more
+                                    money. Please let them know how much you like it.</p>
                             </div>
                         </div>
-                    </main>
-                    <footer class="container-fluid">
-	<div class="row card-admin">
-		<div class="col-xs-12">
-			<div class="card-block">
-				<div class="footertitle">
-                    <center>
-					    <p>This software is protected under U.S. Copyright law and International Treaties. All Rights reserved.<p/>
-                    </center>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
 
-                </section>
-            </div>
-        </form>
-        
-<script src="App_Themes/NewXtraDuty/js/tether.min.js"></script>
-<script src="App_Themes/NewXtraDuty/js/bootstrap4/bootstrap.4.0.0.min.js"></script>
+                        <!-- Administration Message Card -->
+                        <div class="card-admin rounded-card  neumorphic-outset">
+                            <div class="card-top">
+                                <h4 class="card-title">Message from the Administration</h4>
+                            </div>
+                            <div class="card-block">
+                                <p class="card-text"><span id="txtWebNotice">Welcome to the Xtra Duty Officer
+                                        Portal!<br /><br />
+                                        The agency can post any important messages to its officers in this space.
+                                        These messages can include upcoming events, policy changes or whatever
+                                        information you feel you need to communicate to your officers.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="container-fluid">
+                <div class="row card-admin footerStyle">
+                    <div class="col-xs-12">
+                        <div class="card-block">
+                            <div class="footertitle">
+                                <center>
+                                    <p>This software is protected under U.S. Copyright law and International
+                                        Treaties. All Rights reserved.
+                                        <p />
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+    </div>
+</form>
+
+    <script src="App_Themes/NewXtraDuty/js/tether.min.js"></script>
+    <script src="App_Themes/NewXtraDuty/js/bootstrap4/bootstrap.4.0.0.min.js"></script>
 
 <!--<script src="App_Themes/NewXtraDuty/js/moment.min.js"></script>-->
 <script src="App_Themes/NewXtraDuty/js/daterangepicker.js"></script>

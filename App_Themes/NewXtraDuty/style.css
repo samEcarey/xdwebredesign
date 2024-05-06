@@ -10823,7 +10823,7 @@ button.btn-primary {
 button.btn-sm, .btn-group-sm > button.btn {
     padding: 10px 10px;
     font-size: .9em;
-    border-radius: 0px;
+    border-radius: 4px; /*Modified the border radius from 0px to 4px*/
 }
 
 @media (min-width: 768px) {
@@ -10911,7 +10911,7 @@ button.btn-topnav {
     background: #f2f2f2;
     list-style: none;
     overflow: hidden;
-    border-radius: 0px;
+    border-radius: 4px;
 }
 
     .breadcrumb li {
@@ -11062,7 +11062,8 @@ button.btn-topnav {
 }
 
 .card-top {
-    border-bottom: 1px solid #f2f2f2;
+    /* border-bottom: 1px solid #f2f2f2; */
+    border-bottom: 1px solid #d9d9d9;
 }
 
     .card-top h4 {
@@ -11249,23 +11250,28 @@ button.btn-topnav {
  * Cards: Widget Backgrounds
  *---------------------------------*/
 .widget-primary {
-    background: #002957;
+    /* background: #002957; */
+    background: linear-gradient(45deg, #002957 0%, #005fcc 100%);
 }
 
 .widget-primary-darker {
-    background: #1a92ce;
+    /* background: #1a92ce; */
+    background: linear-gradient(45deg, #1a92ce 0%, #a4d9f4 100%);
 }
 
 .widget-primary-light {
-    background: #5aa1e3;
+    /* background: #5aa1e3; */
+    background: linear-gradient(45deg, #5aa1e3 0%,  #a8cdf0 100%);
 }
 
 .widget-accent {
-    background: #a12b31;
+    /* background: #a12b31; */
+    background: linear-gradient(45deg, #a12b31 0%,  #da7277 100%);
 }
 
 .widget-accent-alt {
-    background: #d9534f;
+    /* background: #d9534f; */
+    background: linear-gradient(45deg, #d9534f 0%, #e89996 100%);
 }
 
 .widget-accent button.btn-primary {
@@ -11479,6 +11485,13 @@ form table.table-vwh {
     .sidebar-profile-section .profile-details {
         display: flex;
         justify-content: flex-start;
+        
+    }
+    /*Image styling added*/
+    .sidebar-profile-section .profile-details img {
+     width: 50px;
+     height: 50px;
+     border: 2px solid white;
     }
 
         .sidebar-profile-section .profile-details div {
@@ -11493,19 +11506,26 @@ form table.table-vwh {
                 display: flex;
                 margin: 5px 0px 0px -40px;
                 list-style-type: none;
+                margin-left: 20px; /*Margin-Left added*/
+              
             }
 
                 .sidebar-profile-section .profile-details div ul li a {
                     display: inline-block !important;
-                    margin-right: 4px;
+                    margin-right: 10px; /*Modified from 4px to 10px*/
                     padding: 0px;
-                    width: 26px !important;
+                    /* width: 26px !important;
                     height: 22px;
-                    line-height: 20px;
+                    line-height: 20px; */
+                    width: 28px !important; /* Modified to make slightly bigger and circle */
+                    height: 28px;
+                    line-height: 28px;
                     text-align: center;
                     background: rgba(255, 255, 255, 0.1);
-                    border-radius: 0px;
-                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                   
+    
+                    /* border: 1px solid rgba(255, 255, 255, 0.3); */
                     -webkit-transition: all .1s;
                     transition: all .1s;
                     color: WHITE;
@@ -11642,6 +11662,7 @@ form table.table-vwh {
             }
 
     #sidebar-nav ul {
+        padding-top:20px;
         font-size: .9em;
         text-transform: uppercase;
     }
@@ -11674,13 +11695,13 @@ form table.table-vwh {
         }
 
 #sidebar-nav ul li:hover {
-    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    /* border-left: 3px solid rgba(255, 255, 255, 0.5); */
     background: rgba(255, 255, 255, 0.05);
-    -webkit-transition: all 0.1s ease;
+    /* -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
     -ms-transition: all 0.1s ease;
-    transition: all 0.1s ease;
+    transition: all 0.1s ease; */
 }
 
 #sidebar-footer {
