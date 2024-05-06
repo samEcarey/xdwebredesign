@@ -58,11 +58,12 @@
 }
 
 .chartStyle {
-  background: #ecf0f3;
+  /* background: #ecf0f3; */
   border-radius: 10px;
-  box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
-  padding: 20px;
-  margin: 10px;
+  /* box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; */
+  /* padding: 20px; */
+  /* margin: 10px; */
+  /* height: 100%; */
 }
 
 /* Sidebard styling */
