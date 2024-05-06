@@ -2,7 +2,7 @@
 .rounded-card {
   border-radius: 10px; 
 }
-.topPadding {
+.top-padding {
   padding-top: 10px;
 }
 
@@ -57,7 +57,7 @@
   box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
 }
 
-.chartStyle {
+.chart-style {
   background: #ecf0f3;
   border-radius: 10px;
   box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
@@ -66,7 +66,18 @@
 }
 
 /* Sidebard styling */
-
+/*Taken from XD2 animation.js */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.25);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
 .sidebar-profile-section .profile-details div ul li a {
   box-shadow: 4px 4px 8px #001c3d, -4px -4px 8px #003b71;
 }
@@ -86,12 +97,18 @@
   transform: translateY(-3px) !important; 
 }
 
+#sidebar-nav li:hover .fa-angle-right {
+animation: pulse 2s ease-in-out infinite;  
+}
+
 /*Footer Styling*/
 .footertitle {
   font-size: 0.85rem;
 }
-.footerStyle {
+.footer-style {
   padding: 0px;
+  background: WHITE;
+
 }
 .card-block {
   font-size: 0.85rem;
