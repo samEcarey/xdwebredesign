@@ -1,7 +1,7 @@
-
 .rounded-card {
-  border-radius: 10px; 
+  border-radius: 10px;
 }
+
 .topPadding {
   padding-top: 10px;
 }
@@ -21,17 +21,26 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .img-knoxville {
   width: auto;
   height: 100%;
   object-fit: cover;
 }
 
+@media (max-width: 990px) {
+  .apply-padding {
+    padding-right: 15px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .image-circle {
-    width: 200px; /* Larger size for smaller screens */
+    width: 200px;
+    /* Larger size for smaller screens */
     height: 200px;
   }
+
 }
 
 /* widget and chart styling*/
@@ -39,7 +48,7 @@
   min-height: 200px;
   border-radius: 10px;
   padding: 10px;
-  
+
   /* Boxshadow for panel from XD2 */
   box-shadow: 0.5px 0.4px 16.7px -15px rgba(0, 0, 0, 0.012),
     1px 0.8px 20.1px -15px rgba(0, 0, 0, 0.017),
@@ -52,6 +61,7 @@
     16.9px 13.5px 22.8px -15px rgba(0, 0, 0, 0.043),
     30px 24px 29px -15px rgba(0, 0, 0, 0.06);
 }
+
 .neumorphic-outset {
   background: linear-gradient(145deg, #efeeee, #ffffff);
   box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
@@ -71,29 +81,35 @@
 .sidebar-profile-section .profile-details div ul li a {
   box-shadow: 4px 4px 8px #001c3d, -4px -4px 8px #003b71;
 }
+
 .sidebar-profile-section .profile-details div ul li a:hover {
   box-shadow: inset 4px 4px 8px #001c3d, inset -4px -4px 8px #003b71;
 }
+
 #sidebar-nav ul li:hover a {
   color: white;
 }
+
 #sidebar-nav ul li {
   transition: 0.2s ease-in, 0.5s ease-out 0.1s !important;
 }
+
 #sidebar-nav ul li:hover {
   /*selectable styles*/
   z-index: 999;
   box-shadow: -3px 8px 25px #001c3d !important;
-  transform: translateY(-3px) !important; 
+  transform: translateY(-3px) !important;
 }
 
 /*Footer Styling*/
 .footertitle {
   font-size: 0.85rem;
 }
+
 .footerStyle {
   padding: 0px;
 }
+
 .card-block {
   font-size: 0.85rem;
 }
