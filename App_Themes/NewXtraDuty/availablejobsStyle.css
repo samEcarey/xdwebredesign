@@ -130,25 +130,15 @@ margin: auto;
 .rounded-border{
   border-radius: 20px !important;
 }
-@media (max-width: 992px) {
-  .date-time-section, .employer-info {
-      margin-right: 0;
-      margin-bottom: 10px;
+
+@media screen and (max-width: 992px){
+  .timing-employer-container{
+    gap: 10px;
   }
-  .calendar-box {
-    width: 5rem;
- 
+  .employer-info, .date-time-container{
+    flex: 1;
+    width: 100%;
   }
-}
-@media (max-width: 778px) {
-  .date-time-section, .employer-info {
-      margin-right: 0;
-      margin-bottom: 10px;
-  }
-  .calendar-box {
-    width: 8rem;
- 
-  }
+
 }
 
-/*Third design*/
