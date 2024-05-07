@@ -284,7 +284,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdate
                <div id="UpdatePanel1">
 
 
-                
+         
 <!-- First option here -->
 <div class="row" ID="divJobID9229">
     <div class="col-xs-12">
@@ -361,6 +361,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdate
     </div>
 </div>
 
+
 <!-- Second option here  -->
 
 <div class="row" id="divJobID9315">
@@ -377,14 +378,14 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdate
                             <div class="rs-week-new">Tuesday</div>
                         </div>
                         <div class="time-box">
-                            <div><span>Start-time:</span> 08:00</div>
-                            <div><span>End-time:</span> 16:00</div>
+                            <div><i class="fa fa-clock-o" style="margin-right: 4px;"></i><span>Start-time:</span> 08:00</div>
+                            <div><i class="fa fa-clock-o" style="margin-right: 4px;"></i><span>End-time:</span> 16:00</div>
                         </div>
                     </div>
                 </div>
                 <!-- Right Section for Employer Information -->
                 <div class="col-md-6">
-                    <div class="employer-info">
+                    <div class="employer-info rounded">
                         <div><span>Employer:</span> Construction Co</div>
                         <div><span>District:</span> San Antonio </div>
                         <div><span>Location:</span> Main St.</div>
@@ -394,6 +395,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdate
                     </div>
                 </div>
                 </div>
+                <!-- Notes Section Below -->
                 <div class="row">
                     <div class="col-12">
                         <div class="note-section">
@@ -415,12 +417,67 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdate
             </div>
         </div>
     </div>
-    
-    <!-- Notes Section Below -->
-
 
   
-    
+<!-- Third option here  -->
+
+<div class="row" id="divJobID9315">
+    <div class="col-xs-12 container ">
+        <div class="card-admin rounded">
+            <div class="row card-admin timing-employer-container rounded">
+                <!-- Left Section for Date and Time -->
+                <div class="col-md-4">
+                    <div class="date-time-section rounded">
+                        <div class="calendar-box ">
+                            <div class="rs-month-new"><strong>May</strong></div>
+                            <div class="rs-day-new">7</div>
+                            <div class="rs-year-new">2024</div>
+                            <div class="rs-week-new">Tuesday</div>
+                        </div>
+                        <div class="time-box">
+                            <div><i class="fa fa-clock-o" style="margin-right: 4px;"></i><span>Start-time:</span> 08:00</div>
+                            <div><i class="fa fa-clock-o" style="margin-right: 4px;"></i><span>End-time:</span> 16:00</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Section for Employer Information -->
+                <div class="col-md-8 employer-info rounded">
+                    <div class="row">
+                    <section class="col-md-7 result-info">
+                        <div><span>Employer:</span>Construction Co</div>
+                        <div><span>District:</span>San Antonio</div>
+                        <div><i class="fa fa-map-marker" style="margin-right: 4px;"></i><span>Location:</span>Main St.</div>
+                    </section>
+                    <section class="col-md-3 result-info">
+                        <div><i class="fa fa-suitcase" style="margin-right: 4px;"></i><span>Job Type:</span>Road Job</div>
+                        <div><span>Hourly Rate:</span>$45.00</div>
+                        <div><span>Available Until:</span>Filled</div>            
+                    </section>
+                </div>
+                    <div class="note-section">
+                        <div><span>Note:</span> Additional details about job...</div>
+                    </div>
+                    <section class="col-xs-12 col-sm-12 col-lg-12 col-xl-4 button-placement">
+                        <section>
+                            <button class="btn btn-primary btn-sm btn-left"
+                                    type="button" runat="server" onclick="spinSubmit(this,'btnRequest','9401')" >Request</button>
+                        </section>
+                        <section>
+                            <button class="btn btn-primary btn-sm btn-right"
+                                    type="button" runat="server" onclick="spinSubmit(this,'btnShowDetails','9401')" >View Details</button>
+                        </section>
+                    </section>
+
+                </div>
+                </div>
+        
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- Forth option here -->
 </div>
 
 	<div class="row" ID="divJobID9486">
