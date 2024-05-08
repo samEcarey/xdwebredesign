@@ -1,10 +1,9 @@
-/* First Design */
+
 .main-container-jobs {
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-
 .result-action {
   display: flex;
   align-items: center;
@@ -27,7 +26,6 @@
   background-color: white;
 }
 
-/*Second design */
 .date-time-section {
   background-color: WHITE;
   padding: 13px;
@@ -127,7 +125,7 @@ margin: auto;
   margin: auto;
   font-size: 0.9rem;
 }
-.rounded-border{
+.rounded-border, .card-bsdatepicker{
   border-radius: 20px !important;
 }
 
@@ -142,3 +140,17 @@ margin: auto;
 
 }
 
+.text-filter{
+  margin-top: 2px;
+  width: 40%;
+ }
+ .sort-container {
+        display: flex;
+        justify-content:flex-end !important; 
+        align-items: center; 
+        /* border: 1px solid gray; */ 
+ }
+ 
+.ranges ul li, .ranges .range_inputs button.btn-default, .ranges .range_inputs button.btn-success,.daterangepicker{
+  border-radius: 10px;
+}
