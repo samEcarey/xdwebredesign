@@ -1,7 +1,38 @@
 
+.main-container-jobs {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
+.result-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result-date-box{
+  max-height: 200px;
+  max-width: 120px;
+  padding: 4px;
+}
+.result-item{
+  padding: 20px;
+}
+.rs-week {
+  margin-top: 5px; 
+        color: black;
+}
+.white-bg{
+  background-color: white;
+}
 .date-time-section {
+  background-color: WHITE;
+  padding: 13px;
+  margin-right: 5px; 
   border: 1px solid #e1e1e1;
+  
+}
+.date-time-section {
   display: flex; 
   flex-direction: column; 
   align-items: center; 
@@ -9,7 +40,6 @@
   height: 100%; 
 
 }
-
 .calendar-box {
   margin-bottom: 20px; 
   width: 8rem;
@@ -22,10 +52,12 @@
   font-size: 0.8em;      
   font-weight: bold;     
   text-transform: uppercase; 
+  /* display: block; */
   margin-right: 5px;    
 }
 .timing-employer-container{
 margin: auto;
+
 }
 
 .rs-month-new, .rs-day-new, .rs-year-new, .rs-week-new {
@@ -103,35 +135,3 @@ margin: auto;
   }
 
 }
-
-.text-filter{
-  margin-top: 2px;
-  width: 40%;
-  border: 1px solid rgb(234, 230, 230);
- }
- .sort-container {
-        display: flex;
-        justify-content:flex-end !important; 
-        align-items: center; 
- }
- 
-.ranges ul li, .ranges .range_inputs button.btn-default, .ranges .range_inputs button.btn-success,.daterangepicker{
-  border-radius: 10px;
-}
-.button-container {
-  position: sticky;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center;
-}
-
-.report-range {
-  width: 100%;
-  margin: 0px 0px 0px 0px;
-  padding: 5px 10px;
-  cursor: pointer;
-  background: WHITE;
-  border: 1px solid #ede9e9;
-  border-radius: 0px;
-}
-
