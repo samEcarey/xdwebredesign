@@ -1,0 +1,138 @@
+ /* Apply border radius to the table */
+ @media screen and (max-width: 950px) {
+     .container-fluid {
+         flex-direction: column;
+     }
+
+     .filters-container,
+     .calendar-container {
+         flex: 1;
+         width: 100%;
+     }
+
+     .status {
+         /* border: 1px solid red; */
+         display: flex;
+         flex-direction: row !important;
+     }
+ }
+
+ /* NEW COMPONENT STYLES */
+ .new-input-field {
+     display: flex;
+     border: 1px solid #f2f2f2;
+     border-radius: 4px;
+     width: 100%;
+     font-size: smaller;
+     padding: 2px 4px;
+     min-height: 25px;
+     /* margin: 0px !important; */
+ }
+
+ .new-button {
+     border-radius: 20px !important;
+ }
+
+ /* FILTERS CONTAINER STYLES */
+ .filters-container {
+     display: flex !important;
+     /* flex-grow: 1; */
+     /* width: 100% !important; */
+     background: transparent !important;
+     flex-direction: column;
+     margin-right: 20px;
+ }
+
+ .filters-main {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .filter-container {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     /* align-items: center; */
+     border-radius: 10px !important;
+     /* margin: 0px !important; */
+ }
+
+ .filter-label {
+     /* border: 1px solid red; */
+     display: flex;
+     width: fit-content;
+ }
+
+ .status {}
+
+ .job-status {
+     display: flex;
+     flex-direction: row;
+     justify-items: center;
+     align-items: center;
+     margin-right: 5px;
+ }
+
+ /* CALENDAR CONTAINER STYLES */
+ .calendar-container {
+     margin-bottom: 15px;
+     flex: 3;
+     /* max-width: 75%; */
+     width: 100%;
+ }
+
+ .rounded-table {
+     border-radius: 10px !important;
+     border: 1px solid red;
+     width: 100px;
+     overflow: hidden;
+     background: white;
+     /* background-color: red; */
+     /* Ensures rounded corners */
+ }
+
+ .month-arrows {
+     background-color: transparent;
+     border: 0px !important;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     /* height: 30px !important; */
+ }
+
+ .month-arrows:hover {
+     color: #fff;
+     background-color: #025aa5;
+     border-color: #01549b;
+ }
+
+ .calendar-actions {
+     padding-bottom: 15px;
+     align-content: center;
+ }
+
+ .remove-margin {
+     /* border: 1px solid red; */
+     margin: 0px !important;
+ }
+
+ .calendar-legend-container {
+     width: 100%;
+     display: flex;
+    justify-content: end;
+
+ }
+ .calendar-legend-list {
+    /* width: 100%; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ .calendar-legend-tags {
+     width: fit-content;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
