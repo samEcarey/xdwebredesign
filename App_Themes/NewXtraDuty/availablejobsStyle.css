@@ -133,5 +133,8 @@ margin: auto;
   background: WHITE;
   border: 1px solid #ede9e9;
   border-radius: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
