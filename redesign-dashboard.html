@@ -79,7 +79,9 @@
     <link href="App_Themes/NewXtraDuty/tether.min.css" type="text/css" rel="stylesheet" />
     <link href="App_Themes/NewXtraDuty/toastr.css" type="text/css" rel="stylesheet" />
     <link href="App_Themes/NewXtraDuty/toastr.min.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="App_Themes/NewXtraDuty/dashboardstyle.css" type="text/css" />
+    <!--===== Beth's CSS =====-->
+    <link rel="stylesheet" href="dashboardstyles.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="newtheme.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -135,9 +137,9 @@
             //]]>
         </script>
 
-        <nav id="navbartop" class="navbar-fixed-top">
+        <nav id="navbartop" class="navbar-fixed-top new-nav-top-color ">
             <section id="navbartop-left">
-                <div id="navbartop-navlogo">
+                <div id="navbartop-navlogo" class="new-nav-sidebar-color" style="color: black !important;">
                     <button id="lg-screen-toggle" class="btn-navbar-top collapse in" data-toggle="collapse">
                         <!-- <i id="sm-caret-left" class="fa fa-caret-left" aria-hidden="true"></i> -->
                         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -152,14 +154,17 @@
                         </a>
                     </div>
                 </div>
-                <div id="navbartop-nav">
+                <div id="navbartop-nav" class="new-nav-top-color" style="color: black !important;">
                     <ul>
                         <li><a href="./redesign-dashboard.html">Dashboard</a></li>
                         <li><a href="./wfPreferences.aspx">Profile</a></li>
                     </ul>
+                    <!-- <ul class="breadcrumb">
+                        <li class="active"><a href="redesign-dashboard.html">Home</a></li>
+                    </ul> -->
                 </div>
             </section>
-            <section id="navbartop-right">
+            <section id="navbartop-right" class="new-nav-top-color" style="color: black !important;">
                 <button class="btn-navbar-top btn-user">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <span>
@@ -198,7 +203,7 @@
                                 <!--//** Buttons **//-->
                                 <div class="row col-xs-12">
                                     <fieldset class="form-group">
-                                        <label class="col-sm-3 control-label" for=""></label>
+                                        <label class="col-sm-3 control-label new-nav-sidebar-color" for=""></label>
                                         <div class="col-sm-9 col-md-3">
                                             <div class="reportrange-buttons">
                                                 <button id="Button3" class="btn btn-primary btn-sm btn-left"
@@ -211,7 +216,7 @@
                                 </div>
                                 <div class="row col-xs-12">
                                     <fieldset class="form-group">
-                                        <label class="col-sm-3 control-label" for=""></label>
+                                        <label class="col-sm-3 control-label new-nav-sidebar-color" for=""></label>
                                         <div class="col-sm-9">
                                             <div class="reportrange-buttons">
                                                 <a id="optout1099"
@@ -241,62 +246,73 @@
                         <div class="row">
                             <div class="col-sm-12 col-lg-10 col-xl-8">
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtFirstName">First Name</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color" for="txtFirstName">First
+                                        Name</label>
                                     <div class="col-sm-9">
                                         <span id="txtFirstName" class="col-sm-12"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtLastName">Last Name</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color" for="txtLastName">Last
+                                        Name</label>
                                     <div class="col-sm-9">
                                         <span id="txtLastName" class="col-sm-12"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtAddress1">Address</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color"
+                                        for="txtAddress1">Address</label>
                                     <div class="col-sm-9">
                                         <input name="txtAddress1" type="text" id="txtAddress1" class="col-sm-12" />
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtAddress2"></label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color"
+                                        for="txtAddress2"></label>
                                     <div class="col-sm-9">
                                         <input name="txtAddress2" type="text" id="txtAddress2" class="col-sm-12" />
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtCity">City</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color"
+                                        for="txtCity">City</label>
                                     <div class="col-sm-9">
                                         <input name="txtCity" type="text" id="txtCity" class="col-sm-12" />
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtState">State</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color"
+                                        for="txtState">State</label>
                                     <div class="col-sm-9">
                                         <input name="txtState" type="text" id="txtState" class="col-sm-3" />
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtPostalCode">ZIP</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color"
+                                        for="txtPostalCode">ZIP</label>
                                     <div class="col-sm-9">
                                         <input name="txtPostalCode" type="text" id="txtPostalCode" class="col-sm-3" />
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtCellPhone">Phone Number</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color" for="txtCellPhone">Phone
+                                        Number</label>
                                     <div class="col-sm-9">
                                         <input name="txtCellPhone" type="text" id="txtCellPhone" class="col-sm-3" />
                                     </div>
                                 </fieldset>
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtDOB">Date of Birth</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color" for="txtDOB">Date of
+                                        Birth</label>
                                     <div class="col-sm-9">
                                         <input name="txtDOB" type="text" id="txtDOB" class="col-sm-3" />
                                     </div>
                                 </fieldset>
                                 <!--//** SSN **//-->
                                 <fieldset class="row form-group">
-                                    <label class="col-sm-3 control-label" for="txtSSN">Social Security Number:</label>
+                                    <label class="col-sm-3 control-label new-nav-sidebar-color" for="txtSSN">Social
+                                        Security
+                                        Number:</label>
                                     <div class="col-sm-8">
                                         <input name="txtSSN" type="password" maxlength="9" id="txtSSN"
                                             class="form-control" placeholder="Enter SSN" />
@@ -311,7 +327,7 @@
                                 <!--//** Buttons **//-->
                                 <div class="row col-xs-12">
                                     <fieldset class="form-group">
-                                        <label class="col-sm-3 control-label" for=""></label>
+                                        <label class="col-sm-3 control-label new-nav-sidebar-color" for=""></label>
                                         <div class="col-sm-9 col-md-3">
                                             <div class="reportrange-buttons">
                                                 <button id="btnAuthorize1099" class="btn btn-primary btn-sm btn-left"
@@ -322,7 +338,7 @@
                                         </div>
                                     </fieldset>
                                     <fieldset class="form-group">
-                                        <label class="col-sm-3 control-label" for=""></label>
+                                        <label class="col-sm-3 control-label new-nav-sidebar-color" for=""></label>
                                         <div class="col-sm-9 col-md-3">
                                             <div class="reportrange-buttons">
                                                 <button id="btnDecline1099" class="btn btn-primary btn-sm btn-left"
@@ -341,7 +357,7 @@
             </div>
 
         </div>
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="new-nav-sidebar-color">
             <aside id="sidebar-wrapper">
                 <!-- <header id="sidebar-branding" class="sidebar-section">
                     <a href="#0">
@@ -355,17 +371,17 @@
                         <div>
                             <span>Welcome, Payton</span>
                             <!-- <ul> -->
-                                <!--            <li><a href="#0"><i class="fa fa-envelope"></i></a></li>-->
-                                <!-- <li><a href="wfPreferences.aspx"><i class="fa fa-user "></i></a></li> -->
-                                <!--            <li><a href="#0"><i class="fa fa-cog"></i></a></li>-->
-                                <!-- <li><a href="wfSignOut.aspx"><i class="fa fa-power-off "></i></a></li> -->
+                            <!--            <li><a href="#0"><i class="fa fa-envelope"></i></a></li>-->
+                            <!-- <li><a href="wfPreferences.aspx"><i class="fa fa-user "></i></a></li> -->
+                            <!--            <li><a href="#0"><i class="fa fa-cog"></i></a></li>-->
+                            <!-- <li><a href="wfSignOut.aspx"><i class="fa fa-power-off "></i></a></li> -->
                             <!-- </ul> -->
                         </div>
                     </div>
 
                 </section>
 
-                <section id="sidebar-nav" class="sidebar-section">
+                <section id="sidebar-nav" class="sidebar-section new-nav-sidebar-color">
                     <ul>
                         <li><a href="redesign-dashboard.html"><i class="fa fa-dashboard"></i><span> Dashboard</span></a>
                         </li>
@@ -377,7 +393,7 @@
                         <li class="collapsed" data-toggle="collapse" data-target="#myaccountmenu"><a href="#0"><i
                                     class="fa fa-user"></i><span> My Account</span><i class="fa fa-angle-right"></i></a>
                         </li>
-                        <ul class="sub-menu collapse" id="myaccountmenu">
+                        <ul class="sub-menu collapse new-nav-sidebar-color" id="myaccountmenu">
                             <li><a href="wfPreferences.aspx">Edit Profile</a></li>
                             <li><a href="wfPassword.aspx">Change Password</a></li>
                         </ul>
@@ -385,27 +401,30 @@
                     </ul>
                 </section>
 
-                <footer id="sidebar-footer" class="sidebar-section">
+                <footer id="sidebar-footer" class="sidebar-section new-nav-sidebar-color">
                 </footer>
             </aside>
 
             <section id="content-wrapper">
                 <header class="container-fluid">
-                    <div class="row col-xs-12 user-alert">
+                    <div class="row col-xs-12 user-alert"
+                    style="border: 0px !important; background-color: white;"
+                     >
 
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 card-admin card-pagetitle">
-                            <div class="row col-xs-12">
-                                <H1 class="col-xs-12 col-md-7 col-lg-9">Auth Test</H1>
+                        <div class="col-xs-12 card-admin" style="background-color: #f2f2f2; border: 0px !important; box-shadow: none;">
+                            <div class="row col-xs-12" style="display: flex; padding-bottom: 15px; align-items: center;">
                                 <div class="image-circle">
                                     <img class="col-xs-12 col-md-4 col-lg-2 img-knoxville "
                                         src="/App_Themes/NewXtraDuty/img/KnoxvilleLogoXDan.png">
                                 </div>
+                                <H1 class="col-xs-12 col-md-7 col-lg-9" style="font-weight: bold; color: #606060; ">Auth Test</H1>
+                            
                             </div>
-                            <ul class="breadcrumb">
+                            <!-- <ul class="breadcrumb">
                                 <li class="active"><a href="redesign-dashboard.html">Home</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </header>
@@ -415,8 +434,8 @@
                     <div class="row" style="display: flex; flex-wrap: nowrap; padding: 0px 15px; ">
                         <!-- Welcome Card -->
                         <div class="card-admin rounded-card" style="width: 33%; margin-right: 15px;">
-                            <div class="card-top">
-                                <h2>Welcome!</h2>
+                            <div class="card-top ">
+                                <h2 class="w3-text-theme">Welcome!</h2>
                             </div>
                             <div class="card-block">
                                 <p>Please select an option from the menu to get started. Your agency has made this
@@ -428,7 +447,7 @@
                         <!-- Administration Message Card -->
                         <div class="card-admin rounded-card " style="flex: 1;">
                             <div class="card-top">
-                                <h4 class="card-title">Message from the Administration</h4>
+                                <h4 class="card-title w3-text-theme">Message from the Administration</h4>
                             </div>
                             <div class="card-block">
                                 <p class="card-text"><span id="txtWebNotice">Welcome to the Xtra Duty Officer
@@ -444,16 +463,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-lg-4 apply-padding" style="padding-right: 0px;">
                             <!-- Row for widgets -->
-                            <div class="row" >
+                            <div class="row">
                                 <div class="" style="width: 50%;">
-                                    <div class="widget widget-primary-darker">
+                                    <div class="widget ">
                                         <!-- Job History Widget -->
-                                        <section class="widget-title">
+                                        <section class="widget-title ">
                                             <div>
                                                 <!-- <i class="fa fa-history"></i> -->
                                                 <h2>Job History</h2>
                                             </div>
-                                            <button class="btn btn-primary btn-sm" id="Button1" type="button"
+                                            <button class="btn btn-primary btn-sm new-button-text-color" id="Button1"
+                                                type="button"
                                                 onclick="spinSubmit(this,'btnViewJobHistory','')">View</button>
                                         </section>
                                         <section class="widget-block">
@@ -461,19 +481,20 @@
                                                 to be
                                                 verified.</p>
                                         </section>
-                                        <section class="widget-footer">
+                                        <section class="widget-foote ">
                                         </section>
                                     </div>
                                 </div>
                                 <div class="" style="width: 50%;">
-                                    <div class="widget widget-primary-light">
+                                    <div class="widget  ">
                                         <!-- Available Jobs Widget -->
                                         <section class="widget-title">
                                             <div>
                                                 <!-- <i class="fa fa-history"></i> -->
                                                 <h2>Available Jobs</h2>
                                             </div>
-                                            <button id="Button2" class="btn btn-primary btn-sm" type="button"
+                                            <button id="Button2" class="btn btn-primary btn-sm new-button-text-color"
+                                                type="button"
                                                 onclick="spinSubmit(this,&#39;btnViewAvailableJobs&#39;,&#39;&#39;)">View</button>
                                         </section>
                                         <section class="widget-block">
@@ -489,14 +510,15 @@
                             </div>
                             <div class="row">
                                 <div class="" style="width: 50%;">
-                                    <div class="widget widget-accent">
+                                    <div class="widget ">
                                         <!-- My Calendar Widget -->
-                                        <section class="widget-title">
+                                        <section class="widget-title ">
                                             <div>
                                                 <!-- <i class="fa fa-history"></i> -->
                                                 <h2>My Calendar</h2>
                                             </div>
-                                            <button class="btn btn-primary btn-sm" id="btnViewMyCalendar" type="button"
+                                            <button class="btn btn-primary btn-sm new-button-text-color"
+                                                id="btnViewMyCalendar" type="button"
                                                 onclick="spinSubmit(this,'btnViewMyCalendar','')">View</button>
                                         </section>
                                         <section class="widget-block">
@@ -508,21 +530,21 @@
                                     </div>
                                 </div>
                                 <div class="" style="width: 50%;">
-                                    <div class="widget widget-accent-alt">
+                                    <div class="widget widget-accent-alt ">
                                         <!-- Profile Widget -->
-                                        <section class="widget-title">
+                                        <section class="widget-title ">
                                             <div>
                                                 <!-- <i class="fa fa-history"></i> -->
                                                 <h2>Profile</h2>
                                             </div>
-                                            <button class="btn btn-primary btn-sm" id="btnViewMyProfile" type="button"
+                                            <button class="btn btn-primary btn-sm new-button-text-color"
+                                                id="btnViewMyProfile" type="button"
                                                 onclick="spinSubmit(this,'btnViewMyProfile','')">View</button>
                                         </section>
-                                        <section class="widget-block">
+                                        <section class="widget-block new-card-color">
                                             <p>Update your contact information and notification preferences.</p>
                                         </section>
-                                        <section class="widget-footer">
-
+                                        <section class="widget-footer new-card-color">
                                         </section>
 
                                     </div>
@@ -531,7 +553,7 @@
                         </div>
                         <!-- Chart Area -->
                         <div class="col-xs-12 col-lg-8">
-                            <div class="card-admin rounded-card chartStyle">
+                            <div class="card-admin rounded-card ">
                                 <input type="hidden" name="hfLineChartLabels" id="hfLineChartLabels"
                                     value="[ &#39;Dec&#39;, &#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39; ]" />
                                 <input type="hidden" name="hfLineChartData0" id="hfLineChartData0"
@@ -648,6 +670,32 @@
                             beginAtZero: true
                         }
                     }]
+                }
+            },
+            legend: {
+                display: true,
+                labels: {
+                    usePointStyle: true,
+                    generateLabels: function (chart) {
+                        var data = chart.data;
+                        return data.datasets.map(function (dataset, i) {
+                            return {
+                                text: dataset.label,
+                                fillStyle: dataset.borderColor,
+                                strokeStyle: dataset.borderColor,
+                                lineWidth: 2,
+                                pointStyle: 'line',
+                                // Include point if the legend style uses point style
+                                hidden: !chart.isDatasetVisible(i),
+                                datasetIndex: i
+                            };
+                        });
+                    },
+                    font: {
+                        family: 'Public-sans', // Specify the font family
+                        size: 12, // Specify the font size
+                        lineHeight: 1.2 // Specify the line height
+                    }
                 }
             }
         });

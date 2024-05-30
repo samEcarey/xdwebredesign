@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 // Sidebar > Sidebar-Profile > Close Button
 $('#sidebar-profile .close').click(function () {
-	var $p = $(this).parents('.sidebar-profile-content');
+	var $p = $(this).parents('.sidebar-profile-content new-nav-sidebar-color');
 	$p.addClass('animated fadeOut');
 	setTimeout(function () {
 		$p.css({

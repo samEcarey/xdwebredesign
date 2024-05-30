@@ -2,24 +2,20 @@
   border-radius: 10px;
 }
 
-.topPadding {
-  padding-top: 10px;
-}
-
 /*Knoxville image*/
 .image-circle {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
-  border: 1px solid #b8babb;
+  /* border: 1px solid #b8babb; */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -15px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-top: -15px; */
+  /* margin-bottom: 20px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .img-knoxville {
@@ -47,8 +43,25 @@
 .widget {
   min-height: 200px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
+  background: white;
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+  color: #606060 !important;
+   -webkit-text-fill-color: #606060;
+    -webkit-text-stroke-color: #606060;
+  /* background: linear-gradient(45deg, white 0%, #1C5D99 100%); */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* margin-bottom: 15px; */
+  /* padding-bottom: 15px; */
+  /* border-bottom: 1px solid rgba(96, 96, 96, 0.5); */
+}
 
+.new-box-shadow {
   /* Boxshadow for panel from XD2 */
   box-shadow: 0.5px 0.4px 16.7px -15px rgba(0, 0, 0, 0.012),
     1px 0.8px 20.1px -15px rgba(0, 0, 0, 0.017),
@@ -67,23 +80,16 @@
   box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
 }
 
-.chartStyle {
-  /* background: #ecf0f3; */
-  border-radius: 10px;
-  /* box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; */
-  /* padding: 20px; */
-  /* margin: 10px; */
-  /* height: 100%; */
-}
-
 /* Sidebard styling */
 
 .sidebar-profile-section .profile-details div ul li a {
-  box-shadow: 4px 4px 8px #001c3d, -4px -4px 8px #003b71;
+  /* border: 1px solid red; */
+  box-shadow: 4px 4px 8px #1C5D99, -4px -4px 8px #003b71;
 }
 
 .sidebar-profile-section .profile-details div ul li a:hover {
-  box-shadow: inset 4px 4px 8px #001c3d, inset -4px -4px 8px #003b71;
+  /* border: 1px solid red; */
+  box-shadow: inset 4px 4px 8px #1C5D99, inset -4px -4px 8px #003b71;
 }
 
 #sidebar-nav ul li:hover a {
@@ -97,7 +103,7 @@
 #sidebar-nav ul li:hover {
   /*selectable styles*/
   z-index: 999;
-  box-shadow: -3px 8px 25px #001c3d !important;
+  box-shadow: -3px 8px 25px #1C5D99 !important;
   transform: translateY(-3px) !important;
 }
 

@@ -78,7 +78,9 @@
 <link href="App_Themes/NewXtraDuty/tether.min.css" type="text/css" rel="stylesheet" />
 <link href="App_Themes/NewXtraDuty/toastr.css" type="text/css" rel="stylesheet" />
 <link href="App_Themes/NewXtraDuty/toastr.min.css" type="text/css" rel="stylesheet" />
-<link href="App_Themes/NewXtraDuty/availablejobsStyle.css" type="text/css" rel="stylesheet" />
+<!--===== Beth's CSS =====-->
+<link rel="stylesheet" href="availablejobstyles.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="newtheme.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -135,7 +137,7 @@
             //]]>
         </script>
 
-        <nav id="navbartop" class="navbar-fixed-top">
+        <nav id="navbartop" class="navbar-fixed-top new-nav-sidebar-color">
             <section id="navbartop-left">
                 <div id="navbartop-navlogo">
                     <button id="lg-screen-toggle" class="btn-navbar-top collapse in" data-toggle="collapse">
@@ -152,7 +154,7 @@
                         </a>
                     </div>
                 </div>
-                <div id="navbartop-nav">
+                <div id="navbartop-nav" class="new-nav-top-color">
                     <ul>
                         <li><a href="./wfOfficerLanding.aspx">Dashboard</a></li>
                         <li><a href="./wfPreferences.aspx">Profile</a></li>
@@ -176,9 +178,9 @@
             </section>
 
         </nav>
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="new-nav-sidebar-color">
             <aside id="sidebar-wrapper">
-                <header id="sidebar-branding" class="sidebar-section">
+                <header id="sidebar-branding" class="sidebar-section new-nav-sidebar-color">
                     <a href="#0">
                         <img id="imgBranding" class="img-fluid center-block logo"
                             src="App_Themes/NewXtraDuty/img/logos/extraduty_logo258x68_wht.png" />
@@ -200,7 +202,7 @@
 
                 </section>
 
-                <section id="sidebar-nav" class="sidebar-section">
+                <section id="sidebar-nav" class="sidebar-section new-nav-sidebar-color">
 
                     <ul>
                         <li><a href="wfOfficerLanding.aspx"><i class="fa fa-dashboard"></i><span> Dashboard</span></a>
@@ -214,7 +216,7 @@
                         <li class="collapsed" data-toggle="collapse" data-target="#myaccountmenu"><a href="#0"><i
                                     class="fa fa-user"></i><span> My Account</span><i class="fa fa-angle-right"></i></a>
                         </li>
-                        <ul class="sub-menu collapse" id="myaccountmenu">
+                        <ul class="sub-menu collapse new-nav-sidebar-color" id="myaccountmenu">
                             <li><a href="wfPreferences.aspx">Edit Profile</a></li>
                             <li><a href="wfPassword.aspx">Change Password</a></li>
                         </ul>
@@ -222,7 +224,7 @@
                     </ul>
                 </section>
 
-                <footer id="sidebar-footer" class="sidebar-section">
+                <footer id="sidebar-footer" class="sidebar-section new-nav-sidebar-color">
                 </footer>
             </aside>
 
@@ -258,9 +260,9 @@
                                             <fieldset class="row form-group">
 
                                                 <div class="">
-                                                    <label class="control-label " for="ddFilterBy">Filter
+                                                    <label class="control-label new-nav-sidebar-color" for="ddFilterBy">Filter
                                                         By:</label>
-                                                    <select name="ddFilterBy" class="control-label rounded"
+                                                    <select name="ddFilterBy" class="control-label rounded new-nav-sidebar-color"
                                                         style=" border: 1px solid rgb(220, 217, 217); padding:2px"
                                                         onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddFilterBy\&#39;,\&#39;\&#39;)&#39;, 0)"
                                                         id="ddFilterBy">
@@ -277,7 +279,7 @@
                                             <fieldset class="form-group">
                                                 <div class=" ">
                                                     <select name="ddContainsNotContains" id="ddContainsNotContains"
-                                                        class=" control-label rounded "
+                                                        class=" control-label rounded new-nav-sidebar-color"
                                                         style="color:#002957;font-size: .8em;font-weight: bold;text-transform: uppercase; border: 1px solid rgb(220, 217, 217) ;padding: 4px">
                                                         <option selected="selected" value="Contains">Contains
                                                         </option>
@@ -292,10 +294,10 @@
                                         </div>
                                         <div class="col-lg-3 col-xl-3">
                                             <fieldset>
-                                                <label class="control-label" for="ddlVehicleRequired">Vehicle
+                                                <label class="control-label new-nav-sidebar-color" for="ddlVehicleRequired">Vehicle
                                                     Required:</label>
 
-                                                <select name="ddlVehicleRequired" class="control-label rounded"
+                                                <select name="ddlVehicleRequired" class="control-label rounded new-nav-sidebar-color"
                                                     style="border: 1px solid rgb(220, 217, 217);padding: 2px"
                                                     onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlVehicleRequired\&#39;,\&#39;\&#39;)&#39;, 0)"
                                                     id="ddlVehicleRequired">
