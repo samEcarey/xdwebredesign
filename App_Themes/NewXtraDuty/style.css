@@ -11190,7 +11190,7 @@ button.btn-topnav {
 }
 
     .widget h1, .widget h2, .widget h3, .widget h4, .widget h5, .widget h6 {
-        color: WHITE;
+        color: #606060;
     }
 
     .widget h2 {
@@ -11200,19 +11200,22 @@ button.btn-topnav {
     }
 
     .widget p {
-        color: rgba(255, 255, 255, 0.8);
+        /* color: rgba(255, 255, 255, 0.8); */
+        color: #606060;
         font-size: .8em;
         font-weight: 100;
     }
 
     .widget strong {
-        color: white;
+        /* color: white; */
+        color: #606060;
         font-size: 1em;
         text-transform: uppercase;
     }
 
     .widget .fa {
-        color: WHITE;
+        /* color: WHITE; */
+        color: #606060;
     }
 
     .widget .widget-title {
@@ -11249,19 +11252,25 @@ button.btn-topnav {
  * Cards: Widget Backgrounds
  *---------------------------------*/
 .widget-primary {
-    background: #002957;
+    /* background: #002957; */
+    background: white;
+
 }
 
 .widget-primary-darker {
-    background: #1a92ce;
+    /* background: #1a92ce; */
+    background: white;
 }
 
+
 .widget-primary-light {
-    background: #5aa1e3;
+    /* background: #5aa1e3; */
+    background: white;
 }
 
 .widget-accent {
-    background: #a12b31;
+    /* background: #a12b31; */
+    background: white;
 }
 
 .widget-accent-alt {
