@@ -10890,7 +10890,7 @@ div#page-wrapper section#content-wrapper {
 #navbartop #navbartop-left #navbartop-navlogo button {
     width: 60px;
     height: 40px;
-    background: #3F5F81;
+
 }
 
 #navbartop #navbartop-left #navbartop-navlogo #navbartop-branding {
@@ -11607,8 +11607,8 @@ button.btn-topnav {
 
 /*--added--*/
 .logo-img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 @media (min-width: 768px) {
@@ -12072,6 +12072,7 @@ form table.table-vwh td:first-child {
 #sidebar-nav {
     padding: 0px 0px 0px 0px;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
+    
 }
 
 #sidebar-footer {
@@ -12313,9 +12314,7 @@ form table.table-vwh td:first-child {
     -ms-transition: all 0.1s ease;
     transition: all 0.1s ease;
 }
-#sidebar-toggle:checked ~ #page-wrapper #sidebar-wrapper .sidebar-profile-section .profile-details span {
-    display: none;
-}
+
 #sidebar-footer {
     /* background: #002957; */
     background: none;
