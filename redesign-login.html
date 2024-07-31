@@ -5,9 +5,8 @@
 <head id="Head1">
     <title>
         Xtra Duty - Sign In
-    </title><!-- ===========================================================
- ===== Header: Html-Header
- =============================================================== -->
+    </title>
+    <!-- ================================================================ Header: Html-Header =============================================================== -->
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
     <meta name="viewport"
@@ -30,13 +29,12 @@
     <link rel="stylesheet" href="App_Themes/NewXtraDuty/datepicker.css" type="text/css" />
     <link rel="stylesheet" href="App_Themes/NewXtraDuty/tempusdominus-bootstrap-4.css" type="text/css" />
 
-
     <!--===== Modernizr =====-->
     <script src="App_Themes/NewXtraDuty/js/modernizr-2.8.3.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
 
     <script src="App_Themes/NewXtraDuty/js/min/bootstrap.min.js"></script>
     <script src="App_Themes/NewXtraDuty/js/jquery/jquery.2.2.0.min.js"></script>
@@ -50,7 +48,6 @@
     <script src="App_Themes/NewXtraDuty/js/toastr.js"></script>
     <script src="App_Themes/NewXtraDuty/js/jsShowMessage.js"></script>
     <script src="App_Themes/NewXtraDuty/js/linearicons.free.1.0.0.svgembedder.min.js"></script>
-
 
     <script type="text/javascript">
         var buttonbusy = false;
@@ -69,6 +66,8 @@
             __doPostBack(command, argument);
         }
     </script>
+
+    <!--=================Styles======================================-->
     <link rel="stylesheet" href="App_Themes/NewXtraDuty/ASPModal.css" />
     <link href="App_Themes/NewXtraDuty/ASPModal.css" type="text/css" rel="stylesheet" />
     <link href="App_Themes/NewXtraDuty/bootstrap.min.css" type="text/css" rel="stylesheet" />
@@ -84,21 +83,25 @@
     <link href="App_Themes/NewXtraDuty/toastr.css" type="text/css" rel="stylesheet" />
     <link href="App_Themes/NewXtraDuty/toastr.min.css" type="text/css" rel="stylesheet" />
 </head>
+<!--==============body============================-->
 
-<body class="">
-   
-    <div class=" login-container-new row">
-          <!--Log in form-->
-          <div class="login-form-section col-sm-4 ">
-            <img id="imgBranding" class="img-fluid center-block logo login-brand-img" src="App_Themes/NewXtraDuty/img/logos/extraduty_logo258x68.png" width="50%" />
+<body class="login-info-wrapper">
+    <!---Container for login-Info Section and LogIn form-->
+    <div class="login-container-new row ">
+
+        <!--Log-in form-->
+        <div class="col-sm-4 login-form-section rounded-right-login ">
+            
             <form method="post" action="./wfxdlogin.aspx" id="Form1" class="form-signin form-signin-alt rounded-2">
+                <img id="imgBranding" class="img-fluid center-block logo login-form-brand-img"
+            src="App_Themes/NewXtraDuty/img/logos/extraduty_icon30x22_wht.png"  />
+            
                 <div class="aspNetHidden">
                     <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
                     <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
                     <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
                         value="/wEPDwUKLTkxMzg2NjA2MQ9kFgQCAw8PFgIeB1Zpc2libGVoZGQCBQ9kFgYCAw9kFgICAQ9kFgICAQ9kFggCAw9kFgICAQ8QZGQWAGQCBQ8WAh4FY2xhc3MFIGJ0biBidG4tbGcgYnRuLXByaW1hcnkgYnRuLWJsb2NrZAIHDxYCHwEFDmhpZGRlbi1jb250cm9sZAIJDxYCHwEFIGJ0biBidG4tbGcgYnRuLXByaW1hcnkgYnRuLWJsb2NrZAIFDw8WAh4EVGV4dAUSU2FuZGJveCAtIEpJVkFTT0ZUZGQCCQ8PFgIfAGhkFgICCw8PFgIfAGhkZGRKq093awbqRVyVcIHbqPs1eK0e/7lVwYtwwv10S/+pEw==" />
                 </div>
-
                 <script type="text/javascript">
                     //<![CDATA[
                     var theForm = document.forms['Form1'];
@@ -114,13 +117,9 @@
                     }
                     //]]>
                 </script>
-
-
                 <script
                     src="/WebResource.axd?d=zaCcV-7NswjUvK2UXez4Ue7rfGrx9NpizNgUd_voUrJs50Mfl-I7nPdIf5QrShcWz1OlaDGrCGoixBhqgDqCsulKC5rukDtEN8M4XRDMd6Y1&amp;t=638459824569584809"
                     type="text/javascript"></script>
-
-
                 <script
                     src="/ScriptResource.axd?d=SC851L6r1Qq-9LgUIy8w-WOmaMJpFlHAFUNjxoW-GYu87KwkpPqP0GE7XQP3iXEhrfZyMjSc3qRYrUbOaRy53IDZgf34amEDF7TZ2lDh1i9jcv-rtDqBGTw9kyaymGog7T1EeR7dyZPfNpjkMTxS9lnGCSedHe1vhfn6CdKPqjkHcBgwrsaannUSPjrGdsfc0&amp;t=74258c30"
                     type="text/javascript"></script>
@@ -129,12 +128,10 @@
                     if (typeof (Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
                     //]]>
                 </script>
-
                 <script
                     src="/ScriptResource.axd?d=gZ6Pgb82tooXxyfRfp_vRq5y0366CU-hZ6_saGaCm7oW_KHxaQKffXVQ_GnowrwsKpebjAX3Fvwrfa3N8GJfHGOKNP3uAASqsuvyph6_WAoNvbFiVpmAzTRLB2x4QPYa9EkwyjMgh7UWWJcQFdvty8kbYc5DnsiNmpnNAtXpiKdKmutUSjZTqmB5_RWfPsEK0&amp;t=74258c30"
                     type="text/javascript"></script>
                 <div class="aspNetHidden">
-
                     <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="97919EC8" />
                 </div>
                 <script type="text/javascript">
@@ -142,16 +139,11 @@
                     Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'Form1', [], [], [], 90, '');
                     //]]>
                 </script>
-
                 <div id="pnlMFA" class="modal-hide">
-
                     <div id="pnlMFAContent" class="modal-content">
-
                         <div id="pnlMFAContainter" class="modal-container">
-
                             <h2><span id="Label1">Verification Required</span></h2>
                             <div id="pnlMFAOptions" class="mfa-options">
-
                                 <table id="rblMFAOptions">
                                     <tr>
                                         <td><span class="aspNetDisabled" class="radio-button-list-item"><input
@@ -171,7 +163,6 @@
                                 <label for="txtVerificationCode" class="sr-only">Verification Code</label>
                                 <input name="txtVerificationCode" type="text" id="txtVerificationCode"
                                     class="hidden-control" placeholder="Verification Code" autofocus="" />
-
                             </div>
                             <button id="cmdMFASend" class="btn btn-lg btn-primary btn-block" type="button"
                                 onclick="spinSubmit(this,&#39;cmdMFASend&#39;,&#39;&#39;)"
@@ -182,16 +173,13 @@
                             <button id="cmdMFACancel" class="btn btn-lg btn-primary btn-block" type="button"
                                 onclick="spinSubmit(this,&#39;cmdMFACancel&#39;,&#39;&#39;)"
                                 style="margin-bottom: 20px; max-width: 98%;">Cancel</button>
-
                         </div>
-
                     </div>
-
                 </div>
-                <h2><span id="txtAgencyName">Sandbox - JIVASOFT</span></h2>
+                <h2><span class="" id="txtAgencyName">Sandbox - JIVASOFT</span></h2>
                 <div id="pnlOfficerLogin" class="pnl-officer-login">
 
-                    <h2><span id="txtOfficerSignIn" style="text-transform: none;">Employee Sign-In</span></h2>
+                    <h2 class="header-form-login-text"><span id="txtOfficerSignIn"  style="text-transform: none">Employee Sign-In</span></h2>
                     <label for="txtEmployeeNumber" class="sr-only placeholder-text">ID or Badge #</label>
                     <input name="txtEmployeeNumber" type="text" id="txtEmployeeNumber"
                         class="form-control login-input rounded-2" placeholder="ID or Badge #" required=""
@@ -205,58 +193,66 @@
                             onclick="spinSubmit(this,&#39;cmdSignIn&#39;,&#39;&#39;)">Sign in</button>
                         <button id="cmdEmailPassword" class="btn btn-xd" type="button"
                             onclick="spinSubmit(this,&#39;cmdEmailPassword&#39;,&#39;&#39;)">Email Password</button>
-        
+
                     </div>
-                    <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center login-form-text">
                         <a id="cmdCustomerLogin"
-                        href="javascript:__doPostBack(&#39;cmdCustomerLogin&#39;,&#39;&#39;)">Go to
-                        Customer Login</a>
+                            href="javascript:__doPostBack(&#39;cmdCustomerLogin&#39;,&#39;&#39;)">Go to
+                            Customer Login</a>
                     </div>
-
-
                 </div>
-
             </form>
         </div>
-        <!--Info Section-->
-        <div class="info-section col-lg-8">
-            <h3 class="header-login-info-text">Authorized Use Only</h4>
-            <h6 class="sub-header-login-info-text"> This Computer System is the Private Property of Hart Halsey, LLC.Unathorized access to or use of this computer system is strictly prohibited. </h6>
-            <div class="login-text-section" >
-                <p>By using or accessing this computer system you agree:</p>
-                <p>1. You are an authorized user of the computer system,</p>
-                <p>2. You will only perform explicitly authorized activities on this computer system,</p>
-                <p>3. You will not attempt to access data on this system without authorization,</p>
-                <p>4. You will not engage in fraudulent or illegal activity on or through this computer system.</p>
-                <p>Violations of these policies will be prosecuted to the full extent of the law under all
-                applicable United States laws and international treaties.</p>
+
+        <!--Login Info Section-->
+        <div class="login-info-section col-lg-8 rounded-left-login">
+            <img id="imgBranding" class="img-fluid center-block logo login-brand-img"
+                src="App_Themes/NewXtraDuty/img/logos/extraduty_logo258x68_wht.png" width="50%" />
+
+            <div class="login-info-text-section-top">
+                MANAGED SOLUTIONS FOR LAW ENFORCEMENT EXTRA DUTY <br><br>
+                We provide agencies solutions that relieve them of administrative burden, limits their financial and
+                legal risk, and enhances operational efficiency.
             </div>
 
         </div>
-      
     </div>
 
+
+    <!---Footer Section-->
+    <div class="login-footer-section card-admin d-flex flex-direction-column align-items-center justify-content-center">
+    <div class="login-footer-text-section-top ">
+        <h3 class="header-login-info-text">Authorized Use Only</h3>
+        <h6>This Computer System is the Private Property of Hart Halsey, LLC. Unauthorized access to or use of this computer system is strictly prohibited.</h6>
+    
+        <div class=" indented-text-login">
+            <p>By using or accessing this computer system you agree:</p>
+            <ol>
+                <li>You are an authorized user of the computer system,</li>
+                <li>You will only perform explicitly authorized activities on this computer system,</li>
+                <li>You will not attempt to access data on this system without authorization,</li>
+                <li>You will not engage in fraudulent or illegal activity on or through this computer system.</li>
+            </ol>
+        </div>
+        <h6>Violations of these policies will be prosecuted to the full extent of the law under all applicable United States laws and international treaties.</h6>
+    </div>
+    </div>
+
+    <!---Scripts-->
     <script src="App_Themes/NewXtraDuty/js/tether.min.js"></script>
     <script src="App_Themes/NewXtraDuty/js/bootstrap4/bootstrap.4.0.0.min.js"></script>
-
     <!--<script src="App_Themes/NewXtraDuty/js/moment.min.js"></script>-->
     <script src="App_Themes/NewXtraDuty/js/daterangepicker.js"></script>
     <script src="App_Themes/NewXtraDuty/js/btstrp-datepicker.js"></script>
     <script src="App_Themes/NewXtraDuty/js/btstrp-slider-setpriority.js"></script>
-
     <script src="App_Themes/NewXtraDuty/js/Chart.bundle.min.js"></script>
     <script src="App_Themes/NewXtraDuty/js/Chart.global.settings.js"></script>
-
     <script src="App_Themes/NewXtraDuty/js/smoke.min.js"></script>
     <!--<script src="App_Themes/NewXtraDuty/js/smoke.init.js"></script>-->
-
     <!--<script src="App_Themes/NewXtraDuty/js/range-slider.js"></script>-->
-
     <script src="App_Themes/NewXtraDuty/js/plugins.js"></script>
     <script src="App_Themes/NewXtraDuty/js/App.js"></script>
-
     <script src="App_Themes/NewXtraDuty/js/ie10-viewport-bug-workaround.js"></script>
-
 </body>
 
 </html>

@@ -1,90 +1,190 @@
+.login-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .login-container-new {
     display: flex;
-    /* background: blue; */
     max-width: 950px;
     align-items: center;
     justify-content: center;
     margin: auto;
-
-    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-top: auto;
     align-items: stretch;
     flex-direction: row-reverse;
 }
 
 .login-brand-img {
     margin-top: 50px;
-
 }
 
+.login-form-brand-img {
+    display: none !important;
+    background-color: #002957;
+    /* Need to change the color of png not the bg*/
+    margin-bottom: 30px;
+
+}
+.login-form-text-heading{
+    padding-bottom: 20px;
+}
 .login-input {
     margin-bottom: 20px;
 }
 
 .form-signin-alt {
+    padding-top: 0px;
     box-shadow: none;
-    margin: none !important;
+    margin-bottom: 20px;
+}
+.form-signin-alt .header-form-login-text{
+   
+    margin-bottom: 30px;
 }
 
 .form-signin input[type="password"],
-.form-signin input[type="text"] {
-    font-size: 0.875rem;
+.form-signin input[type="text"],
+.login-form-text a,
+.login-info-text-section,
+.login-info-text-section-top {
+    font-size: 0.8rem;
+}
+
+.login-form-text a {
+    color: #002957;
+}
+
+.login-form-text a:visited {
+    color: #187ff5;
 }
 
 .header-login-info-text {
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: center;
-    color: #d3dde7; /*XD2 Darkest Text*/
+    color: #4d5762;
 }
 
 .sub-header-login-info-text {
     font-weight: lighter;
     text-align: center;
-    color:#d3dde7;
+    color: #4d5762;
 
 }
 
-.login-text-section {
+.login-info-text-section,
+.login-info-text-section-top {
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color:#d3dde7;
+    color: #d3dde7;
+}
 
-
+.login-info-text-section-top {
+    padding-top: 30px;
 }
 
 .login-form-section {
-
     /* border: 1px solid blue; */
     min-width: 300px;
     background: white;
 
-
 }
 
-.info-section {
+.login-footer-section {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    background: white !important;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+.login-footer-section h6 {
+    font-size: 0.875rem;
+}
+
+.login-info-section {
     background: #002957;
 
 }
 
-/* @media (max-width: 992px) {
-    .login-container-new {
-    
-        margin-top: 10px;
-       
+.rounded-left-login {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+.rounded-right-login {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+@media (max-width: 492px) {
+
+    .login-form-section {
+        margin-top: 30px !important;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .login-form-brand-img {
+        display: block !important;
+        background-color: #002957;
+        margin-bottom: 30px;
+
     }
 
     .login-form-section {
-  
-        border: 1px solid grey;
-        width: 600px;
+        /* border: 1px solid grey; */
+        display: flex;
+        width: 300px;
         background: white;
-       
-       
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
     }
 
-    .info-section{
+    .login-info-section {
         display: none;
     }
-} */
+
+    .login-footer-section,
+    .login-footer-text-section-top {
+        /* border: 1px solid red; */
+        background-color: #002957 !important;
+        margin-bottom: 0px;
+    }
+
+    .header-login-info-text,
+    .indented-text-login,
+    .login-footer-section h6 {
+        color: #adafb2;
+    }
+}
+
+.login-footer-text-section-top {
+    padding: 10px;
+    background-color: white;
+    color: #4d5762;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.indented-text-login {
+    padding-left: 20px;
+    font-size: 0.7rem;
+
+}
+
+.indented-text-login ol {
+    margin: 0;
+    padding-left: 20px;
+}
