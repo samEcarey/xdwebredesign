@@ -1,0 +1,90 @@
+.login-container-new {
+    display: flex;
+    /* background: blue; */
+    max-width: 950px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    margin-top: 100px;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.login-brand-img {
+    margin-top: 50px;
+
+}
+
+.login-input {
+    margin-bottom: 20px;
+}
+
+.form-signin-alt {
+    box-shadow: none;
+    margin: none !important;
+}
+
+.form-signin input[type="password"],
+.form-signin input[type="text"] {
+    font-size: 0.875rem;
+}
+
+.header-login-info-text {
+    padding-top: 30px;
+    text-align: center;
+    color: #d3dde7; /*XD2 Darkest Text*/
+}
+
+.sub-header-login-info-text {
+    font-weight: lighter;
+    text-align: center;
+    color:#d3dde7;
+
+}
+
+.login-text-section {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:#d3dde7;
+
+
+}
+
+.login-form-section {
+
+    /* border: 1px solid blue; */
+    min-width: 300px;
+    background: white;
+
+
+}
+
+.info-section {
+    background: #002957;
+
+}
+
+/* @media (max-width: 992px) {
+    .login-container-new {
+    
+        margin-top: 10px;
+       
+    }
+
+    .login-form-section {
+  
+        border: 1px solid grey;
+        width: 600px;
+        background: white;
+       
+       
+    }
+
+    .info-section{
+        display: none;
+    }
+} */
