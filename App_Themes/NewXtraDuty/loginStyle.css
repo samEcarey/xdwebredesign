@@ -15,7 +15,6 @@
     align-items: stretch;
     flex-direction: row-reverse;
 }
-
 .login-brand-img {
     margin-top: 50px;
 }
@@ -23,7 +22,6 @@
 .login-form-brand-img {
     display: none !important;
     background-color: #002957;
-    /* Need to change the color of png not the bg*/
     margin-bottom: 30px;
 
 }
@@ -75,7 +73,6 @@
 
 .login-info-text-section,
 .login-info-text-section-top {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,14 +85,12 @@
 }
 
 .login-form-section {
-    /* border: 1px solid blue; */
     min-width: 300px;
     background: white;
 
 }
 
 .login-footer-section {
-    /* border: 1px solid red; */
     position: relative;
     width: 100%;
     background: white !important;
@@ -129,8 +124,6 @@
     .login-form-section {
         margin-top: 30px !important;
     }
-
-
 }
 
 @media (max-width: 992px) {
@@ -138,11 +131,9 @@
         display: block !important;
         background-color: #002957;
         margin-bottom: 30px;
-
     }
 
     .login-form-section {
-        /* border: 1px solid grey; */
         display: flex;
         width: 300px;
         background: white;
@@ -157,9 +148,8 @@
 
     .login-footer-section,
     .login-footer-text-section-top {
-        /* border: 1px solid red; */
         background-color: #002957 !important;
-        margin-bottom: 0px;
+        margin-bottom: -5px;
     }
 
     .header-login-info-text,
@@ -181,7 +171,6 @@
 .indented-text-login {
     padding-left: 20px;
     font-size: 0.7rem;
-
 }
 
 .indented-text-login ol {
